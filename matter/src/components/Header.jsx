@@ -11,7 +11,7 @@ const Header = () => {
   return (
       <div>
         <Banner></Banner>
-          <div className='Header-container'>
+          <div className='Header-Container'>
               <div className='logo'>
                 <img src="assets/Img/matter.logo.png" alt="matter 로고" />
               </div>
