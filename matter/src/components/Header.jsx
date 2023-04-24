@@ -7,8 +7,8 @@ import { faCartShopping, faHeart } from '@fortawesome/free-solid-svg-icons'
 const Header = () => {
 
   return (
-      <div>
-          <div className='Header-Container'>
+      <div className='Header-Container'>
+          <div className='Header-Box'>
               <div className='logo'>
                 <img src="assets/Img/matter.logo.png" alt="matter 로고" />
               </div>

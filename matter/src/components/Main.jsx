@@ -1,14 +1,10 @@
 import React from 'react'
-import Banner from './Banner'
-import Header from './Header'
-import Footer from './Footer'
+import './Main.css'
 
 const index = () => {
   return (
     <div>
-      <Banner></Banner>
-      <Header></Header>
-      <Footer></Footer>
+     강해민바보멍충이강해민바보멍충이강해민바보멍충이강해민바보멍충이강해민바보멍충이강해민바보멍충이강해민바보멍충이
     </div>
   )
 }

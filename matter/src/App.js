@@ -1,12 +1,11 @@
 import './App.css';
-import Main from './components/Main'
-import Login from './pages/Login';
+import Index from './components/Index';
+
 
 function App() {
   return (
     <div className="App">
-      <Main></Main>
-      <Login></Login>
+      <Index></Index>
     </div>
   );
 }
