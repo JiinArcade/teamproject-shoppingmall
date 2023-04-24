@@ -14,24 +14,24 @@ const Login = () => {
 
         <Form className='Login-Container'>
           <div className="Login-btn">
-            <button style={{ width: "50%", padding: "12px", outline: "none", border: "1px solid #dadada", borderBottom: "none", backgroundColor: "#fff" }} className='sign-in'>SIGN IN</button>
-            <button style={{ width: "50%", padding: "12px", outline: "none", border: "1px solid #dadada", borderBottom: "none", borderLeft: "none", backgroundColor: "#fff" }} className='join-us'>JOIN US</button>
+            <button className='sign-in'>SIGN IN</button>
+            <button className='join-us'>JOIN US</button>
           </div>
 
           <div className='Login-Box'>
             <div className="Id-Box">
               <p>ID</p>
-              <input style={{ width: "80%", padding: "12px", borderRadius: "5px", outline: "none", border: "1px solid #000" }} type="text" placeholder='아이디' />
+              <input type="text" placeholder='아이디' />
             </div>
 
             <div className="Pw-Box">
               <p>Password</p>
-              <input style={{ width: "80%", padding: "12px", borderRadius: "5px", outline: "none", border: "1px solid #000" }} type="text" placeholder='비밀번호' />
+              <input type="text" placeholder='비밀번호' />
             </div>
 
             <div className='Next-btn'>
-              <button style={{ width: "80%", padding: "12px", outline: "none", border: "1px solid #000", backgroundColor: "#000", color: "#fff" }}>SIGN IN</button>
-              <button style={{ width: "80%", padding: "12px", outline: "none", border: "1px solid #000", backgroundColor: "#fff" }}>JOIN US</button>
+              <button>SIGN IN</button>
+              <button>JOIN US</button>
             </div>
 
             <div className='SNS-Box'>
@@ -58,7 +58,18 @@ const Login = () => {
             </div>
           </div>
 
-       
+          <div className='Join-Box'>
+            <div className="Join-List">
+              <div className="Name-Box">
+                <input type="text" placeholder='이름' />
+                <input type="text" placeholder='성' />
+              </div>
+              <div className="Join-Pw">
+                <input type="text" placeholder='비밀번호' />
+                <img src="assets/Img/eye.png" alt="비밀번호 보기" />
+              </div>
+            </div>
+          </div>
         </Form>
       </Container>
       <Footer></Footer>
