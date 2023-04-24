@@ -1,12 +1,17 @@
 import React from 'react'
-import './Main.css'
+import Banner from './Banner'
+import Header from './Header'
+import Footer from './Footer'
 
-const Main = () => {
+const index = () => {
   return (
     <div>
-      
+      <Banner></Banner>
+      <Header></Header>
+      <Footer></Footer>
     </div>
   )
 }
 
-export default Main
+export default index
+
