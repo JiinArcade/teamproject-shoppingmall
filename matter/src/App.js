@@ -1,13 +1,13 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header';
-import Footer from './components/Footer'
+import Index from './components/Index';
+import Login from './pages/Login';
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <Footer></Footer>
+      {/* <Index></Index> */}
+      <Login></Login>
     </div>
   );
 }

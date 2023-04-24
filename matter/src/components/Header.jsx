@@ -1,16 +1,13 @@
 import React from 'react'
-import Banner from './Banner';
 import './Header.css'
 import { useNavigate } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faHeart } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
-    const loginList = ['로그인', '회원가입'];
 
   return (
       <div>
-        <Banner></Banner>
           <div className='Header-Container'>
               <div className='logo'>
                 <img src="assets/Img/matter.logo.png" alt="matter 로고" />
