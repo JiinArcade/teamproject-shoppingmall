@@ -7,7 +7,7 @@ const Details = () => {
   const [detail, setDetail] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/details")
+    fetch("http://localhost:5001/details")
       .then(res => {
         return res.json();
       })
@@ -18,7 +18,7 @@ const Details = () => {
 
   return (
     <div>
-       {detail && <Detail texts={detail} title="All Blogs" />}
+       {detail && <Detail tests={detail} />}
     </div>
   )
 }

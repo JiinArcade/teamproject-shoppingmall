@@ -59,11 +59,6 @@ li{
   width: calc(90%/5);
   cursor: pointer;
 }
-/* .main-img-item img :hover{
-  border: 1px solid #000;
-} */  
-
-
 
 .text-wrapper{
   width: 55%;
@@ -97,4 +92,22 @@ li{
 .main-img-wrapper{
   display: flex;
   flex-direction: column;
+  height: 800px;
+}
+
+.order-wrapper{
+  width: 200px;
+  display: flex;
+  margin-top: 20px;
+}
+.order{
+  width: 50%;
+}
+
+.heart-icon{
+  border: none;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  font-size: 20px;
 }

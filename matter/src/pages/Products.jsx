@@ -7,7 +7,7 @@ const Products = () => {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("http://localhost:5001/products")
       .then(res => {
         return res.json();
       })
@@ -18,7 +18,7 @@ const Products = () => {
 
   return (
     <div>
-       {product && <Product blogs={product} title="All Blogs" />}
+       {product && <Product texts={product}/>}
     </div>
   )
 }
