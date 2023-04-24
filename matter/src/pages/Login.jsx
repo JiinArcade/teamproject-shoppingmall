@@ -26,7 +26,7 @@ const Login = () => {
 
             <div className="Pw-Box">
               <p>Password</p>
-              <input type="text" placeholder='비밀번호' />
+              <input type="password" placeholder='비밀번호' />
             </div>
 
             <div className='Next-btn'>
@@ -65,7 +65,7 @@ const Login = () => {
                 <input type="text" placeholder='성' />
               </div>
               <div className="Join-Pw">
-                <input type="text" placeholder='비밀번호' />
+                <input type="password" placeholder='비밀번호' />
                 <img src="assets/Img/eye.png" alt="비밀번호 보기" />
               </div>
             </div>
