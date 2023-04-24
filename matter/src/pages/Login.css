@@ -1,0 +1,87 @@
+.Container {
+    width: 100%;
+    height: 100vh;
+}
+
+.login-logo img {
+    width: 10%;
+    margin-top: 50px;
+}
+
+.Login-Container {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-family: 'Pretendard-Light';
+}
+
+.Login-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Login-Box {
+    border: 1px solid #dadada;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+}
+
+.Id-Box {
+    margin-top: 50px;
+}
+
+.Id-Box p {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+}
+
+.Pw-Box {
+    margin-top: 50px;
+}
+
+.Pw-Box p {
+    position: absolute;
+    top: 150px;
+    left: 80px;
+}
+
+.Next-btn button:first-child {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.SNS-Box {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.sns-border-box {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.sns-border-left,
+.sns-border-right {
+    width: 30%;
+    height: 1px;
+    background-color: #a0a0a0;
+}
+
+.SNS-Img {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.SNS-Img img {
+    width: 50%;
+}
