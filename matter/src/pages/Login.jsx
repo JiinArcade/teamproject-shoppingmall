@@ -14,8 +14,8 @@ const Login = () => {
 
         <Form className='Login-Container'>
           <div className="Login-btn">
-            <button className='sign-in'>SIGN IN</button>
-            <button className='join-us'>JOIN US</button>
+            <button type='button' className='sign-in'>SIGN IN</button>
+            <button type='button' className='join-us'>JOIN US</button>
           </div>
 
           <div className='Login-Box'>
@@ -30,8 +30,8 @@ const Login = () => {
             </div>
 
             <div className='Next-btn'>
-              <button>SIGN IN</button>
-              <button>JOIN US</button>
+              <button type='button'>SIGN IN</button>
+              <button type='button'>JOIN US</button>
             </div>
 
             <div className='SNS-Box'>
@@ -66,7 +66,41 @@ const Login = () => {
               </div>
               <div className="Join-Pw">
                 <input type="password" placeholder='비밀번호' />
-                <img src="assets/Img/eye.png" alt="비밀번호 보기" />
+                <div><img src="assets/Img/eye.png" alt="비밀번호 보기" /></div>
+                <div className="Join-text">
+                  <span>최소 10자</span>
+                  <p>알파벳 대문자 및 소문자 조합, 최소 1개 이상의 숫자</p>
+                </div>
+              </div>
+              <div className="Birth-Box">
+                <input type="text" placeholder='생년' />
+                <input type="text" placeholder='월' />
+                <input type="text" placeholder='일' />
+              </div>
+              <div className="Adress-Box">
+                <div className="Adress-List">
+                  <input type="text" placeholder='우편번호' />
+                  <button type='button'>주소검색</button>
+                </div>
+                <input type="text" placeholder='기본주소' />
+                <input type="text" placeholder='나머지 주소' />
+              </div>
+              <div className="Mobile-Box">
+                <input type="text" placeholder='앞자리' /> -
+                <input type="text" placeholder='중간자리' /> -
+                <input type="text" placeholder='뒷자리' />
+              </div>
+              <div className="Email-Box">
+                <input type="text" placeholder='E-mail' /> 
+              </div>
+
+              <div className='Agree-Box'>
+                <input type='checkbox'></input>
+                <p><span>Matter</span> 의 <strong>개인정보 처리방침</strong> 및 <strong>이용약관</strong>에 동의합니다.</p>
+              </div>
+
+              <div className='submit-Box'>
+                <button type='button'>가입하기</button>
               </div>
             </div>
           </div>
