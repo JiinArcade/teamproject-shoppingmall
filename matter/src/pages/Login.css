@@ -1,0 +1,295 @@
+.login-logo {
+    margin-top: 50px;
+}
+
+.login-logo img {
+    width: 120px;
+}
+
+.Login-Container {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-family: 'Pretendard-Light';
+}
+
+.Login-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Login-btn button {
+    width: 50%;
+    padding: 20px;
+    outline: none;
+    border: 1px solid #dadada;
+    border-bottom: none;
+    background-color: transparent;
+}
+
+.Login-btn button:last-child {
+    border-left: none;
+}
+
+.Login-btn button:hover {
+    background-color: #f1f1f1;
+}
+
+/* //////////////////////로그인 박스///////////////////////// */
+
+.Login-Box,
+.Join-Box {
+    border: 1px solid #dadada;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+}
+
+.Id-Box {
+    margin-top: 50px;
+}
+
+.Id-Box p {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+}
+
+.Id-Box input,
+.Pw-Box input {
+    width: 80%;
+    padding: 12px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #000;
+}
+
+.Pw-Box {
+    margin-top: 50px;
+}
+
+.Pw-Box p {
+    position: absolute;
+    top: 150px;
+    left: 80px;
+}
+
+/* ////////////////////////로그인 회원가입 BTN/////////////////////// */
+
+.Next-btn button {
+    width: 80%;;
+    padding: 12px;
+    outline: none;
+    border: 1px solid #000;
+}
+
+.Next-btn button:first-child {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.Next-btn button:last-child {
+    background-color: #fff;
+}
+
+/* ///////////////////////로그인 SNS//////////////////////// */
+
+.SNS-Box {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.sns-border-box {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.sns-border-left,
+.sns-border-right {
+    width: 30%;
+    height: 1px;
+    background-color: #a0a0a0;
+}
+
+.SNS-Img {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.SNS-Img img {
+    width: 60%;
+    cursor: pointer;
+}
+
+/* /////////////////////회원가입 박스////////////////////////// */
+
+.Join-List {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.Name-Box input,
+.Join-Pw input,
+.Birth-Box input,
+.Adress-Box input,
+.Mobile-Box input,
+.Email-Box input {
+    padding: 12px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #000;
+}
+
+
+.Join-Pw input,
+.Adress-Box input,
+.Email-Box input,
+.Adress-Box {
+    width: 100%;
+}
+
+.Join-Pw,
+.Adress-Box,
+.Email-Box,
+.Mobile-Box,
+.Agree-Box,
+.submit-Box {
+    margin-top: 30px;
+}
+
+.Adress-Box button:active,
+.submit-Box button:active {
+    background-color: #535353;
+}
+
+.Name-Box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Name-Box input {
+    width: 45%;
+}
+
+.Join-Pw {
+    position: relative;
+}
+
+.Join-Pw img {
+    position: absolute;
+    width: 7%;
+    top: 15%;
+    right: 5%;
+}
+
+.Join-text {
+    text-align: left;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.Join-text p {
+    margin-bottom: 0;
+}
+
+.Birth-Box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.Birth-Box input {
+    width: 30%;
+}
+
+
+.Adress-List {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.Adress-Box input:first-child,
+.Adress-Box button {
+    width: 48%;
+    margin-bottom: 0;
+}
+
+.Adress-Box button {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 25px;
+}
+
+.Adress-Box input:last-child {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.Mobile-Box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Mobile-Box input {
+    width: 25%;
+}
+
+.Agree-Box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 14px;
+}
+
+.Agree-Box p {
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.Agree-Box span {
+    font-family: 'Berliana Lovely Freebies';
+}
+
+.submit-Box {
+    width: 100%;
+    text-align: right; 
+    margin-top: 50px;
+}
+
+.submit-Box button {
+    width: 30%;
+    padding: 12px;
+    border-radius: 30px;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+/* ////////////////////////////////////////////// */
+
+.Login-Box {
+    display: none;
+    /* display: block; */
+}
+
+.Join-Box {
+    display: none;
+    display: block;
+}
