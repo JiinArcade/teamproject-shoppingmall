@@ -39,10 +39,6 @@
 
 /* //////////////////////로그인 박스///////////////////////// */
 
-.Login-Box {
-    display: none;
-}
-
 .Login-Box,
 .Join-Box {
     border: 1px solid #dadada;
@@ -284,4 +280,16 @@
     background-color: #000;
     color: #fff;
     border: none;
+}
+
+/* ////////////////////////////////////////////// */
+
+.Login-Box {
+    display: none;
+    /* display: block; */
+}
+
+.Join-Box {
+    display: none;
+    display: block;
 }
