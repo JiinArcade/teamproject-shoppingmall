@@ -1,0 +1,40 @@
+.Header-Container {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    font-family: 'Pretendard-Medium';
+}
+
+.Header-Box {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.logo {
+    padding: 0 100px;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.userList {
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+.userList li:first-child:hover {
+    font-weight: 700;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.userList li:hover:nth-child(2) {
+    color: #fac107;
+}
