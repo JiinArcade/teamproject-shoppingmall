@@ -36,7 +36,7 @@ const Detail = ({tests, id}) => {
       {/* {fetchData.map((test,index) => ( */}
         <div>
           <div className="detail-preview" key={test.id}>
-            {selectImg === "" && setSelectImg(test.mainimg)}
+              
             <div className="main-img-wrapper">
             {selectImg && (
                 <div className='change-Img'>

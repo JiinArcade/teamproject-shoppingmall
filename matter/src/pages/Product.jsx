@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useRef } from 'react'
 import { useNavigate } from 'react-router-dom';
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {Navigation, Pagination,Virtual} from 'swiper'
@@ -20,18 +20,28 @@ const Product = ({ texts }) => {
       })
     }
 
-    
+    const progressCircle = useRef(null);
+    const progressContent = useRef(null);
+    const onAutoplayTimeLeft = (s, time, progress) => {
+      progressCircle.current.style.setProperty('--progress', 1 - progress);
+      progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+    };
 
   return (
     <div>
      <Swiper
-      slidesPerView={2}
+      slidesPerView={3}
       spaceBetween={100}
       rewind={false}
       loop={true}
       pagination={{
         type: "fraction"
       }}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      onAutoplayTimeLeft={onAutoplayTimeLeft}
       navigation={true}
       modules={[Pagination, Navigation]}
       className="mySwiper"
@@ -41,6 +51,8 @@ const Product = ({ texts }) => {
         <SwiperSlide><img src="베너사진/MAIN-BANNER-03.png" alt="" /></SwiperSlide>
         <SwiperSlide><img src="베너사진/MAIN-BANNER-04.png" alt="" /></SwiperSlide>
       </Swiper>
+
+      
 
       <div className="product-list">
         {texts.map((test, index) => (
