@@ -28,7 +28,7 @@
 }
 
 .userList li:first-child:hover {
-    font-weight: 700;
+   
 }
 
 .icon {
@@ -36,5 +36,5 @@
 }
 
 .userList li:hover:nth-child(2) {
-    color: #fac107;
+    color: #ee1f1f;
 }

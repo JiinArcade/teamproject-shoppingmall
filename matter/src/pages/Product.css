@@ -1,24 +1,45 @@
+.Product-center {
+  text-align: center;
+  font-family: 'Berliana Lovely Freebies';
+  margin-top: 50px;
+}
+
 .product-list{
   display: flex;
   flex-wrap: wrap;
   width: 65%;
-  height: 80%;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  margin-top: 100px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
+  font-family: 'Pretendard-Medium';
 }
 
-
 .product-preview{
-  position: relative;
   width: calc(100%/3);
   height: 500px;
-  margin-top: 80px;
+  border: solid green;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.product-previewp-img {
+  width: 100%;
+  height: 350px;
+  border: solid red;
 }
 
 .product-preview img{
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 350px;
+}
+
+.best-text {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.title-text {
+  font-size: 13px;
+  font-weight: 700;
 }

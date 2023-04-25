@@ -49,12 +49,15 @@ const Product = ({ texts }) => {
       </Swiper>
 
       
+      <div className="Product-center">
+        <h3>product</h3>
+      </div>
 
       <div className="product-list">
         {texts.map((test, index) => (
           <div className="product-preview" key={index}>
             <div onClick={() => click(index)}>
-              <img src={test.url} alt="" />
+              <div className='product-previewp-img'><img src={test.url} alt="" /></div>
             </div>
               <h2 className='best-text'>{test.recommend}</h2>
               <h3 className='title-text'>{test.title}</h3>
