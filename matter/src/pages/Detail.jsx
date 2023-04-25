@@ -1,40 +1,39 @@
 import React, { useState, useEffect, useReducer } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import{faHeart} from '@fortawesome/free-solid-svg-icons'
-import axios from 'axios'
 import './Detail.css'
+import { useLocation } from 'react-router-dom'
 
 
-const Detail = ({tests, data}) => {
+const Detail = ({tests, id}) => {
   
   const [selectImg, setSelectImg] = useState('');
+  const [test, setFetchData] = useState([]);
+  const location = useLocation();
 
   const handleImageClick = (img) => {
     setSelectImg(img);
   };
 
-  // const fetchData = async () => {
-  //   const res = await fetch("http://localhost:5001/details");
-  //   const data = await res.json();
-  //   console.log(data)
-  // };
-
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
-  const getPosts = async () => {
-    const response = await axios.get('http://localhost:5001/details');
-    return response.data;
-  }
-  const getPostById = async id => {
-    const response = await axios.get('http://localhost:5001/details')
-    return response.data;
-  }
 
 
-  return (
+  useEffect(()=> {
+   fetch(`http://localhost:5001/details/${location.state.id}`)
+   .then(response => {
+    return response.json()
+   })
+   .then(response => {
+     console.log(response)
+     setFetchData(response)
+   });
+  }, []);
+
+
+
+  if (test) {
+    return (
     <div className="detial-list">
-      {tests.map((test,index) => (
+      {/* {fetchData.map((test,index) => ( */}
         <div>
           <div className="detail-preview" key={test.id}>
             {selectImg === "" && setSelectImg(test.mainimg)}
@@ -183,9 +182,11 @@ const Detail = ({tests, data}) => {
 
           
         </div>
-      ))}
+      {/* ))} */}
     </div>
   );
+  }
+  
 };
 
 

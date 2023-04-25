@@ -20,17 +20,19 @@ li{
   font-size: 20px;
 }
 .main-size-text {
-  display: flex;
+  /* display: flex; */
   background-color: transparent;
   border: none;
   padding: 0;
   flex-direction: column;
+  display: block;
   
 }
 
 .main-size-text-list{
   display: flex;
   width: 90%;
+  
 }
 
 .main-size-text-list li{
@@ -45,7 +47,8 @@ li{
 
 .change-Img img{
   width: 90%;
-  height: 400px;
+  height: 350px;
+  
 }
 
 .main-img-item{
@@ -58,6 +61,7 @@ li{
 .main-img-item img{
   width: calc(90%/5);
   cursor: pointer;
+  object-fit: cover;
 }
 
 .text-wrapper{
