@@ -19,7 +19,7 @@
 }
 
 .userList {
-    width: 220px;
+    width: 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,14 +27,35 @@
     cursor: pointer;
 }
 
-.userList li:first-child:hover {
-   
+.userList li {
+    display: flex;
+    align-items: center;
+}
+
+.userList li::after {
+    content: '';
+    display: inline-block;
+    align-items: center;
+    width: 1px;
+    height: 12px;
+    background-color: #000;
+    margin-left: 18px;
+}
+
+.userList li:last-child:after {
+    display: none;
+}
+
+.userList li:first-child:hover,
+.userList li:nth-child(2):hover {
+    font-weight: 700;
+}
+
+.userList li:hover:nth-child(3) {
+    color: #ee1f1f;
 }
 
 .icon {
     font-size: 20px;
 }
 
-.userList li:hover:nth-child(2) {
-    color: #ee1f1f;
-}

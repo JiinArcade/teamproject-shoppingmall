@@ -15,7 +15,8 @@ const Header = () => {
               </div>
 
               <div className='userList'>
-                  <li>로그인 / 회원가입</li>
+                  <li>로그인</li>
+                  <li>회원가입</li>
                   <li className='icon icon-heart'>
                       <FontAwesomeIcon icon={faHeart} />
                   </li>
