@@ -1,23 +1,23 @@
 import './App.css';
-import Product from './pages/Product';
-import Products from './pages/Products';
-import Detail from './pages/Detail';
-import Details from './pages/Details';
-import { useEffect,useState } from 'react';
+import {
+  Routes,
+  Route,
+  Router,
+} from "react-router-dom";
 import Index from './components/Index';
-import Login from './pages/Login';
-
-
-// import Index from './components/Index';
-// import Login from './pages/Login'
+import Main from './components/Main';
 
 function App() {
   return (
-    <div className="App">
-      <Index />
-      <Login></Login>
+    <div>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Main />}></Route>
+        </Routes>
+      </Router>
     </div>
+   
   );
-} 
+}
 
 export default App;

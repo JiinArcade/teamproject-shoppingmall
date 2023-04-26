@@ -69,14 +69,14 @@ const Login = () => {
   };
 
 
-  
-
   return (
     <div>
       <Container>
-        <div className='login-logo'>
-          <img src="assets/Img/matter.logo.png" alt="Matter 로고, 메인페이지로 이동하기" />
-        </div>
+     
+          <div className='login-logo'>
+            <img src="assets/Img/matter.logo.png" alt="Matter 로고, 메인페이지로 이동하기" />
+          </div>
+      
 
         <Form className='Login-Container'>
           <div className="Login-btn">

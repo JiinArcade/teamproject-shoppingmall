@@ -11,9 +11,11 @@ const Header = () => {
   return (
       <div className='Header-Container'>
           <div className='Header-Box'>
-              <div className='logo'>
-                <img src="assets/Img/matter.logo.png" alt="matter 로고" />
-              </div>
+             
+                  <div className='logo'>
+                    <img src="assets/Img/matter.logo.png" alt="matter 로고" />
+                  </div>
+            
 
               <div className='userList'>
                  
