@@ -1,8 +1,9 @@
 import React from 'react'
 import './Header.css'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faHeart } from '@fortawesome/free-solid-svg-icons'
+
 
 
 const Header = () => {
@@ -15,7 +16,9 @@ const Header = () => {
               </div>
 
               <div className='userList'>
-                  <li>로그인</li>
+                 
+                      <li>로그인</li>
+                  
                   <li>회원가입</li>
                   <li className='icon icon-heart'>
                       <FontAwesomeIcon icon={faHeart} />

@@ -5,41 +5,45 @@
 }
 
 .product-list{
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
-  width: 65%;
-  justify-content: space-between;
-  align-items: center;
   margin: 0 auto;
-  border: 1px solid red;
   font-family: 'Pretendard-Medium';
 }
 
 .product-preview{
   width: calc(100%/3);
-  height: 500px;
-  border: solid green;
+  height: 600px;
   margin: 0 auto;
   padding: 10px;
 }
 
 .product-previewp-img {
   width: 100%;
-  height: 350px;
-  border: solid red;
+  height: 380px;
 }
 
 .product-preview img{
   width: 100%;
-  height: 350px;
+  height: 380px;
 }
 
 .best-text {
   margin-top: 20px;
   font-size: 13px;
+  color: rgb(248, 102, 4);
 }
 
 .title-text {
   font-size: 13px;
   font-weight: 700;
+}
+
+.length-text {
+  font-size: 14px;
+}
+
+.price-text {
+  font-size: 14px;
 }

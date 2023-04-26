@@ -7,7 +7,7 @@ const Banner = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsHidden(false);
-    }, 0);
+    }, 5000);
 
     return () => {
       clearTimeout(timer);

@@ -21,7 +21,6 @@ const Product = ({ texts }) => {
     }
 
   
-
   return (
     <div>
      <Swiper
@@ -57,7 +56,7 @@ const Product = ({ texts }) => {
         {texts.map((test, index) => (
           <div className="product-preview" key={index}>
             <div onClick={() => click(index)}>
-              <div className='product-previewp-img'><img src={test.url} alt="" /></div>
+              <div className='product-previewp-img'><img src={test.img} alt="" /></div>
             </div>
               <h2 className='best-text'>{test.recommend}</h2>
               <h3 className='title-text'>{test.title}</h3>
