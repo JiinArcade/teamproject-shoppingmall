@@ -2,18 +2,16 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Banner from './Banner'
 import Header from './Header'
-import Main from './Main'
 import Footer from './Footer'
 
-const Index = () => {
+const IndexPage = () => {
   return (
     <div>
-       <Banner></Banner>
-       <Header></Header>
-       <Main></Main>
-       <Footer></Footer>
+      <Banner></Banner>
+      <Header></Header>
+      
     </div>
   )
 }
 
-export default Index;
+export default IndexPage;

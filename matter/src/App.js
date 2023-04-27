@@ -2,19 +2,26 @@ import './App.css';
 import {
   Routes,
   Route,
-  Router,
+  BrowserRouter
 } from "react-router-dom";
-import Index from './components/Index';
-import Main from './components/Main';
+import IndexPage from './components/IndexPage';
+import Banner from './components/Banner';
+import Details from './pages/Details';
+import Products from './pages/Products';
+import Product from './pages/Product';
+
+
 
 function App() {
   return (
     <div>
-      <Router>
+      <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Main />}></Route>
+          {/* <Route path='/' element={<Banner></Banner>} /> */}
+          <Route path='/' element={<Products />}/>
+          <Route path="/detail/:id" element={<Details />} />
         </Routes>
-      </Router>
+      </BrowserRouter>
     </div>
    
   );
