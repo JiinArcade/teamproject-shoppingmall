@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useReducer } from 'react'
+import React, { useState, useEffect} from 'react'
+import { useLocation } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import{faHeart} from '@fortawesome/free-solid-svg-icons'
 import './Detail.css'
-import { useLocation } from 'react-router-dom'
+
 
 
 const Detail = ({tests, id}) => {
@@ -33,24 +34,26 @@ const Detail = ({tests, id}) => {
   if (test) {
     return (
     <div className="detial-list">
-      {/* {fetchData.map((test,index) => ( */}
-        <div>
-          <div className="detail-preview" key={test.id}>
-              
-            <div className="main-img-wrapper">
-            {selectImg && (
-                <div className='change-Img'>
-                  <img src={selectImg} alt="" />
-                </div>
-              )}
+      <div>
+        <div className="detail-preview" key={test.id}>
+          <div className="main-img-wrapper">
+            {selectImg ? (
+              <div className='change-Img'>
+                <img src={selectImg} alt="" />
+              </div>
+            ) : (
+              <div className='change-Img'>
+                <img src={test.mainimg} alt="" />
+              </div>
+            )}
               <div className="main-img-item">
-              <img
+                <img
                   src={test.mainimg}
                   alt={test.alt}
                   className={selectImg === test.mainimg ? "" : ""}
                   onMouseOver={() => handleImageClick(test.mainimg)}
-                />
-               <img
+              />
+                 <img
                   src={test.mainimg2}
                   alt={test.alt1}
                   className={selectImg === test.mainimg2 ? "" : ""}
@@ -68,7 +71,7 @@ const Detail = ({tests, id}) => {
                   className={selectImg === test.mainimg4 ? "" : ""}
                   onMouseOver={() => handleImageClick(test.mainimg4)}
                 />
-               <img
+                <img
                   src={test.mainimg5}
                   alt={test.alt1}
                   className={selectImg === test.mainimg5 ? "" : ""}
@@ -86,42 +89,42 @@ const Detail = ({tests, id}) => {
                   <li>{test.size5}</li>
                 </ul>
               </button>
-                <button className='main-size-text'>
-                  <ul className='main-size-text-list'>
-                    <li>{test.size6}</li>
-                    <li>{test.size7}</li>
-                    <li>{test.size8}</li>
-                    <li>{test.size9}</li>
-                    <li>{test.size10}</li>
-                  </ul>
-                </button>
-                <button className='main-size-text'>
-                  <ul className='main-size-text-list'>
-                    <li>{test.size11}</li>
-                    <li>{test.size12}</li>
-                    <li>{test.size13}</li>
-                    <li>{test.size14}</li>
-                    <li>{test.size15}</li>
-                  </ul>
-                </button>
-                <button className='main-size-text'>
-                  <ul className='main-size-text-list'>
-                    <li>{test.size16}</li>
-                    <li>{test.size17}</li>
-                    <li>{test.size18}</li>
-                    <li>{test.size19}</li>
-                    <li>{test.size20}</li>
-                  </ul>
-                </button>
-                <button className='main-size-text'>
-                  <ul className='main-size-text-list'>
-                    <li>{test.size21}</li>
-                    <li>{test.size22}</li>
-                    <li>{test.size18}</li>
-                    <li>{test.size23}</li>
-                    <li>{test.size25}</li>
-                  </ul>
-                </button>
+              <button className='main-size-text'>
+                <ul className='main-size-text-list'>
+                  <li>{test.size6}</li>
+                  <li>{test.size7}</li>
+                  <li>{test.size8}</li>
+                  <li>{test.size9}</li>
+                  <li>{test.size10}</li>
+                </ul>
+              </button>
+              <button className='main-size-text'>
+                <ul className='main-size-text-list'>
+                  <li>{test.size11}</li>
+                  <li>{test.size12}</li>
+                  <li>{test.size13}</li>
+                  <li>{test.size14}</li>
+                  <li>{test.size15}</li>
+                </ul>
+              </button>
+              <button className='main-size-text'>
+                <ul className='main-size-text-list'>
+                  <li>{test.size16}</li>
+                  <li>{test.size17}</li>
+                  <li>{test.size18}</li>
+                  <li>{test.size19}</li>
+                  <li>{test.size20}</li>
+                </ul>
+              </button>
+              <button className='main-size-text'>
+                <ul className='main-size-text-list'>
+                  <li>{test.size21}</li>
+                  <li>{test.size22}</li>
+                  <li>{test.size18}</li>
+                  <li>{test.size23}</li>
+                  <li>{test.size25}</li>
+                </ul>
+              </button>
             </div>
 
             <div className='text-wrapper'>
@@ -165,7 +168,7 @@ const Detail = ({tests, id}) => {
             <div className="detail-img-wrapper">
               <img src={test.detailimg} alt="" />
               <img src={test.detailimg1} alt="" />
-              <img src={test.detailimg2} alt="" />
+              <ibmg src={test.detailimg2} alt="" />
               <img src={test.detailimg3} alt="" />
             </div>
             <h3>{test.detailtext}</h3>
@@ -182,7 +185,6 @@ const Detail = ({tests, id}) => {
 
           
         </div>
-      {/* ))} */}
     </div>
   );
   }

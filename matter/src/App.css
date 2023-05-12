@@ -57,3 +57,8 @@ li {
     font-family: 'Pretendard-Thin';
     src: url('../public/assets/Font/AnyConv.com__Pretendard-Thin.woff');
 }
+
+@font-face {
+    font-family: 'BareunBatang';
+    src: url('../public/assets/Font/AnyConv.com__BareunBatangOTFPro-1.woff');
+}

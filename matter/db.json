@@ -2,11 +2,11 @@
   "products": [
     {
       "id": 0,
-      "img": "https://www.satur.co.kr/web/product/medium/202208/26cf7ebb1389e5b6750999725a356918.jpg",
+      "img": "https://satur.co.kr/web/product/medium/202302/e364112a109ff967130f239c1555bff4.jpg",
       "second img": "2",
       "color img": "3",
       "color img2": "4",
-      "title": "Faro Over Size Boucle Cardigan - Classic Black",
+      "title": "Faro Pocket Over Size Boucle Cardigan - Classic Black",
       "color": "6개 색상",
       "price": "111,750원"
     },
@@ -200,17 +200,17 @@
   "details": [
     {
       "id": 0,
-      "alt": "검은색 가디건 앞면",
+      "alt": "검은색 가디건",
       "alt1": "검은색 가디건 뒷면",
-      "mainimg": "https://www.satur.co.kr/web/product/small/202208/bbdce58d612f27ae515d858aa2b81cb7.jpg",
+      "mainimg": "/메인사진/가디건 1 이미지-01.jpg",
       "mainimg2": "/가디건1/가디건 1 이미지-03.jpg",
       "mainimg3": "/가디건1/가디건 1 이미지-04.jpg",
       "mainimg4": "/가디건1/가디건 1 이미지-05.jpg",
       "mainimg5": "/가디건1/가디건 1 이미지-06.jpg",
-      "deatiltitle": "파로 오버 사이즈 부클 가디건 클래식 블랙",
-      "subtext": "Faro Pocket Over Size Boucle Cardigan - Classic Black",
-      "deatillegth": "남성 가디건",
-      "deatilprice": " 119,250원",
+      "deatiltitle": "Stripe Organic Seersucker Shirts - Creamy Butter",
+      "subtext": "스트라이프 오가닉 시어서커 셔츠 크리미 버터",
+      "deatillegth": "남여공용 반팔",
+      "deatilprice": "67,150원 70,000원 15%",
       "colorimg": "1",
       "colorimg2": "1",
       "deatilsize": "S",
