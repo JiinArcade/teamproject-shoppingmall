@@ -286,18 +286,10 @@
 
 .Login-Box {
     display: none;
-    display: block;
+    /* display: block; */
 }
 
 .Join-Box {
-    /* display: none; */
+    display: none;
     display: block;
 }
-
-
-/* 먼저 보이는 화면은 SIGN IN */
-/* Header 로그인 클릭시 SIGN IN 이 보이게*/
-/* Header 회원가입 클릭시 JOIN US 보이게*/
-/* SIGN IN 클릭 시 Login-Box ->  display: block*/
-/* JOIN US 클릭 시 Join-Box ->  display: block*/
-

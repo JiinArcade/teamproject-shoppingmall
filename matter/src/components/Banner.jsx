@@ -1,35 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import './Banner.css';
+import React from 'react'
+import './Banner.css'
 
 const Banner = () => {
-  const [isHidden, setIsHidden] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsHidden(false);
-    }, 5000);
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, []);
-
-  const handleCloseBanner = () => {
-    setIsHidden(true);
-  };
-
   return (
     <div>
-      {!isHidden && (
-        <div className='bannerBox'>
-          <p>반품 및 환불 지연 안내</p>
-          <button type='button' onClick={handleCloseBanner}>
-            x
-          </button>
-        </div>
-      )}
+      <div className='bannerBox'>
+        <p>반품 및 환불 지연 안내</p>
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default Banner;
+export default Banner
