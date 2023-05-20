@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 import Details from './pages/Details';
 import Products from './pages/Products';
-import Product from './pages/Product';
 
 
 
