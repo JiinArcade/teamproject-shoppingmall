@@ -1,23 +1,9 @@
-import './App.css';
-<<<<<<< HEAD
-import {
-  Routes,
-  Route,
-  BrowserRouter
-} from "react-router-dom";
-import Details from './pages/Details';
-import Products from './pages/Products';
-=======
-import Product from './pages/Product';
-import Products from './pages/Products';
-import Detail from './pages/Detail';
-import Details from './pages/Details';
-import Index from './components/Index';
-import { useEffect,useState } from 'react';
->>>>>>> 0aa163fbc258c60e6fc21d6fc86771d9f7385f30
+import "./App.css";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Details from "./pages/Details";
+import Products from "./pages/Products";
 
-
-// import Index from './components/Index';
+import Index from "./components/Index";
 // import Login from './pages/Login'
 
 function App() {
@@ -26,6 +12,6 @@ function App() {
       <Index />
     </div>
   );
-} 
+}
 
 export default App;
