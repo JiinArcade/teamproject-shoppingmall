@@ -444,9 +444,10 @@ const Product = ({ texts }) => {
               </ul>
             </div>
           </div>
+
           <div className="product-main-inner">
             <div className="filter">
-              <ul className="list-wrap">
+              <ul className="list">
                 <p
                   className="list-item"
                   style={{
@@ -454,38 +455,52 @@ const Product = ({ texts }) => {
                     border: borderStyle,
                   }}
                 >
-                  <span className="list-item">
-                    필터 숨기기{" "}
-                    <FontAwesomeIcon className="faSliders" icon={faSliders} />
-                  </span>
+                  필터 숨기기
+                  <FontAwesomeIcon className="faSliders" icon={faSliders} />
                 </p>
 
-                <ul className="list-arrayBox">
-                  <p className="list-item">정렬 기준 :</p>
-                  <p className="list-item" onClick={handleClick3}>
-                    {choice.find((c) => c.checked)?.choice || "추천순"}
-                    {choiceDown ? (
-                      <FontAwesomeIcon
-                        className="faChevron"
-                        icon={faChevronDown}
-                      />
-                    ) : (
-                      <FontAwesomeIcon
-                        className="faChevron"
-                        icon={faChevronUp}
-                      />
-                    )}
+                <div className="list-item-array">
+                  <p
+                    style={{
+                      backgroundColor: currentBgColor,
+                      border: borderStyle,
+                    }}
+                  >
+                    정렬 기준 :
+                  </p>
+                  <div className="list-item-choice">
+                    <p
+                      className="choice-array"
+                      onClick={handleClick3}
+                      style={{
+                        backgroundColor: currentBgColor,
+                        border: borderStyle,
+                      }}
+                    >
+                      {choice.find((c) => c.checked)?.choice || "추천순"}
+                      {choiceDown ? (
+                        <FontAwesomeIcon
+                          className="faChevron"
+                          icon={faChevronDown}
+                        />
+                      ) : (
+                        <FontAwesomeIcon
+                          className="faChevron"
+                          icon={faChevronUp}
+                        />
+                      )}
+                    </p>
                     {isChoice && (
-                      <>
+                      <div>
                         {choice.map((choice, index) => (
                           <li key={index} onClick={() => choiceClick(index)}>
                             <p>{choice.choice}</p>
                           </li>
                         ))}
-                      </>
+                      </div>
                     )}
-                  </p>
-                </ul>
+                  </div>
+                </div>
               </ul>
             </div>
             <div className="product-list">
@@ -533,74 +548,94 @@ const Product = ({ texts }) => {
                 </div>
               ))}
             </div>
-          </div>
-          <div className="detail">
-            <div
-              className="detail-box"
-              style={{ display: toggleModal ? "block" : "none" }}
-            >
-              <span className="detail-input-list">
-                <div className="detail-input-item">
-                  <input type="checkbox" id="switch" className="hide" />
-                  <label for="switch" className="detail-input"></label>
-                  <p>뇌전증 안전모드</p>
-                </div>
-                <div className="detail-input-item">
-                  <input type="checkbox" id="switch1" className="hide" />
-                  <label
-                    onClick={handleBorder}
-                    for="switch1"
-                    className="detail-input"
-                  ></label>
-                  <p>인지 장애 집중모드</p>
-                </div>
-                <div className="detail-input-item">
-                  <input type="checkbox" id="switch2" className="hide" />
-                  <label
-                    onClick={handleFontChange}
-                    for="switch2"
-                    className="detail-input"
-                  ></label>
-                  <p>난독증 친화적 모드</p>
-                </div>
-              </span>
+            <div className="detail-wrapper">
+              <img
+                className="modalImg"
+                src="/메인사진/detailLogo.png"
+                alt="접근창 열기"
+                onClick={openModal1}
+              />
+              <div
+                className="detail-box"
+                style={{ display: toggleModal ? "block" : "none" }}
+              >
+                <div className="detail-innerBox">
+                  <div className="swich-wrap">
+                    <div className="swich-item">
+                      <span>
+                        <input type="checkbox" id="switch" className="hide" />
+                        <label for="switch" className="detail-input"></label>
+                      </span>
+                      <span>뇌전증 안전모드</span>
+                    </div>
+                    <div className="swich-item">
+                      <span>
+                        <input type="checkbox" id="switch1" className="hide" />
+                        <label
+                          onClick={handleBorder}
+                          for="switch1"
+                          className="detail-input"
+                        ></label>
+                      </span>
+                      <span>인지 장애 집중모드</span>
+                    </div>
+                    <div className="swich-item">
+                      <span>
+                        <input type="checkbox" id="switch2" className="hide" />
+                        <label
+                          onClick={handleFontChange}
+                          for="switch2"
+                          className="detail-input"
+                        ></label>
+                      </span>
+                      <span>난독증 친화적 모드</span>
+                    </div>
+                  </div>
 
-              <div className="light">
-                <button>
-                  <img src="/메인사진/lightDark.png" alt="" />
-                </button>
-                <button>
-                  <img src="/메인사진/light.png" alt="" />
-                </button>
-              </div>
-              <div className="text-size">
-                <button className="min-button" onClick={handlePreviousClick}>
-                  <FontAwesomeIcon icon={faMinus} className="prev" />
-                </button>
-                <p>{sizeText[currentIndex].text}</p>
-                <button className="plus-button" onClick={handleNextClick}>
-                  <FontAwesomeIcon icon={faPlus} />
-                </button>
-              </div>
-              <div className="text-color-change">
-                <div className="change-color">
-                  <h4 className="change-color-text">글자 색상 변경</h4>
-                  {colorButtons}
-                </div>
-              </div>
-              <div className="bg-color-change">
-                <div className="change-color">
-                  <h4 className="change-color-text">배경 색상 변경</h4>
-                  {bgColorButton}
+                  <div className="light-wrap">
+                    <span>밝기 조절</span>
+                    <p>
+                      <button>
+                        <img
+                          src="/메인사진/lightDark.png"
+                          alt="밝기 낮추기 버튼"
+                        />
+                      </button>
+                      <span>0</span>
+                      <button>
+                        <img src="/메인사진/light.png" alt="밝기 높이기 버튼" />
+                      </button>
+                    </p>
+                  </div>
+
+                  <div className="text-wrap">
+                    <span>글자 크기조절</span>
+                    <div className="text-size">
+                      <button
+                        className="min-button"
+                        onClick={handlePreviousClick}
+                      >
+                        <FontAwesomeIcon icon={faMinus} className="prev" />
+                      </button>
+                      <span>{sizeText[currentIndex].text}</span>
+                      <button className="plus-button" onClick={handleNextClick}>
+                        <FontAwesomeIcon icon={faPlus} />
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="textColor-changeWrap">
+                    <span className="change-color-text">글자 색상 변경</span>
+                    <div className="change-color">{colorButtons}</div>
+                  </div>
+
+                  <div className="bgcColor-changeWrap">
+                    <span className="change-color-text">배경 색상 변경</span>
+                    <div className="change-color">{bgColorButton}</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <img
-              className="modalImg"
-              src="/메인사진/detailLogo.png"
-              alt=""
-              onClick={openModal1}
-            />
           </div>
         </div>
       </div>
