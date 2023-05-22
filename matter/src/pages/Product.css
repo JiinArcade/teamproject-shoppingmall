@@ -1,3 +1,27 @@
+/* 공통적용 스타일 */
+.faChevron {
+  margin-left: 8px;
+  font-size: 13px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+}
+
+.list-detail {
+  margin-left: 5px;
+}
+
+.product-item-list li,
+.product-item-list p {
+  font-size: 18px;
+  font-family: "Pretendard-Regular";
+  margin-bottom: 10px;
+}
+
+/* ///////////////////// */
+
 .product-wrapper {
   width: calc(100%);
   margin-top: 100px;
@@ -16,10 +40,11 @@
   font-family: "Berliana Lovely Freebies";
 }
 
+/* ----좌측 필터 적용---- */
 .productName {
   position: sticky;
   top: 40px;
-  width: calc(100% - 80%);
+  width: calc(100% - 75%);
   height: 300px;
   text-align: left;
   overflow-y: scroll;
@@ -38,16 +63,93 @@
   background: #ececec;
 }
 
-.product-item-list li,
-.product-item-list p {
-  font-size: 17px;
-  font-family: "Pretendard-Regular";
-  margin-bottom: 5px;
+.voice {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+.voice ul {
+  width: calc(100% - 10%);
+  display: flex;
+  align-items: center;
+}
+
+.voice ul:first-child {
+  position: relative;
+}
+
+.voice ul:first-child button {
+  display: flex;
+  align-items: center;
+  font-family: "Pretendard-ExtraBold";
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+}
+
+.voice ul:first-child button span {
+  margin-right: 10px;
+}
+
+.voice ul:first-child button:hover {
+  color: #7f7f7f;
+}
+
+.voice ul:first-child:hover .voice-guide {
+  display: block;
+}
+
+.voice-guide {
+  font-size: 15px;
+  font-family: "Pretendard-Bold";
+  position: absolute;
+  top: -35px;
+  left: 20px;
+  background-color: #ffff03;
+  padding: 5px 13px;
+  border-radius: 20px;
+  display: none;
+}
+
+.voice label {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Pretendard-ExtraBold";
+  font-size: 17px;
+}
+
+.voice ul input {
+  margin-left: 10px;
+}
+
+input[type="range"] {
+  width: 100px;
+  accent-color: #5a5a5a;
+}
+
+/* ----우측 상단 필터 적용---- */
+.filter {
+  border: solid red;
+  width: calc(100% - 70%);
+  float: right;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.list-arrayBox {
+  display: flex;
+}
+
+/* ----Product 상품 페이지 적용---- */
 .product-main-inner {
   width: calc(100%);
-  border: solid red;
   position: relative;
   margin-top: 10px;
 }
@@ -59,28 +161,6 @@
   margin: 0 auto;
   font-family: "Pretendard-Medium";
   margin-top: 30px;
-}
-
-.filter {
-  position: absolute;
-  top: 0;
-  right: 7%;
-}
-
-.list {
-  display: flex;
-}
-
-.list-item {
-  margin-right: 20px;
-}
-
-.faSliders {
-  margin-left: 5px;
-}
-
-.list-item-choice {
-  display: flex;
 }
 
 .product-preview {
@@ -213,10 +293,6 @@ input:checked + .detail-input:after {
 .light img {
   width: 50px;
   height: 50px;
-}
-
-input[type="range"] {
-  accent-color: #e90b73;
 }
 
 .text-size {

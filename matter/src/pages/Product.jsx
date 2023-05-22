@@ -324,10 +324,7 @@ const Product = ({ texts }) => {
       <div className="product-wrapper">
         <h1 className="product-title">Product</h1>
         <div className="product-wrapper-inner">
-          <div
-            className="productName "
-            style={{ backgroundColor: currentBgColor, border: borderStyle }}
-          >
+          <div className="productName ">
             <ul className="product-item-list">
               <li>탑&티셔츠</li>
               <li>후디</li>
@@ -339,14 +336,13 @@ const Product = ({ texts }) => {
               <li>악세사리</li>
               <li>신발</li>
             </ul>
-
             <ul className="product-item-list">
-              <p onClick={handleClick1}>
+              <p className="list-item" onClick={handleClick1}>
                 성별
                 {isDown ? (
-                  <FontAwesomeIcon icon={faChevronDown} />
+                  <FontAwesomeIcon className="faChevron" icon={faChevronDown} />
                 ) : (
-                  <FontAwesomeIcon icon={faChevronUp} />
+                  <FontAwesomeIcon className="faChevron" icon={faChevronUp} />
                 )}
               </p>
               {isPeople && (
@@ -358,19 +354,19 @@ const Product = ({ texts }) => {
                         checked={people.checked}
                         readOnly
                       />
-                      {people.name}
+                      <span className="list-detail">{people.name}</span>
                     </li>
                   ))}
                 </>
               )}
             </ul>
             <ul className="product-item-list">
-              <p onClick={handleClick}>
+              <p className="list-item" onClick={handleClick}>
                 가격대
                 {showDown ? (
-                  <FontAwesomeIcon icon={faChevronDown} />
+                  <FontAwesomeIcon className="faChevron" icon={faChevronDown} />
                 ) : (
-                  <FontAwesomeIcon icon={faChevronUp} />
+                  <FontAwesomeIcon className="faChevron" icon={faChevronUp} />
                 )}
               </p>
               {isShown && (
@@ -378,20 +374,19 @@ const Product = ({ texts }) => {
                   {prices.map((price, index) => (
                     <li key={index} onClick={() => handlePriceClick(index)}>
                       <input type="checkbox" checked={price.checked} readOnly />
-                      {price.label}
+                      <span className="list-detail">{price.label}</span>
                     </li>
                   ))}
                 </>
               )}
             </ul>
-
             <ul className="product-item-list">
-              <p onClick={handleClick2}>
+              <p className="list-item" onClick={handleClick2}>
                 사이즈
                 {sizeDown ? (
-                  <FontAwesomeIcon icon={faChevronDown} />
+                  <FontAwesomeIcon className="faChevron" icon={faChevronDown} />
                 ) : (
-                  <FontAwesomeIcon icon={faChevronUp} />
+                  <FontAwesomeIcon className="faChevron" icon={faChevronUp} />
                 )}
               </p>
               {isSize && (
@@ -399,46 +394,59 @@ const Product = ({ texts }) => {
                   {size.map((size, index) => (
                     <li key={index} onClick={() => sizeClick(index)}>
                       <input type="checkbox" checked={size.checked} readOnly />
-                      {size.size}
+                      <span className="list-detail">{size.size}</span>
                     </li>
                   ))}
                 </>
               )}
             </ul>
+
             <div className="voice">
-              <label htmlFor="pitch">rate: </label>
-              <span>{rate}</span>
-              <input
-                type="range"
-                min="0.5"
-                max="2"
-                step="0.1"
-                value={rate}
-                onChange={(e) => {
-                  setRate(e.target.value);
-                }}
-              />
-              <label htmlFor="pitch">Pitch: </label>
-              <span>{pitch}</span>
-              <input
-                type="range"
-                min="0"
-                max="2"
-                step="0.1"
-                value={pitch}
-                id="pitch"
-                onChange={(event) => {
-                  setPitch(event.target.value);
-                }}
-              />
-              <button onClick={() => speak({ text: text, rate, pitch })}>
-                <FontAwesomeIcon icon={faMicrophone} />
-              </button>
+              <ul>
+                <button onClick={() => speak({ text: text, rate, pitch })}>
+                  <span>음성 인식</span>
+                  <FontAwesomeIcon icon={faMicrophone} />
+                </button>
+                <p className="voice-guide">클릭하시면 음성이 출력됩니다</p>
+              </ul>
+              <ul>
+                <label htmlFor="pitch">
+                  <span>Rate:</span> <span>{rate}</span>
+                </label>
+
+                <input
+                  type="range"
+                  min="0.5"
+                  max="2"
+                  step="0.1"
+                  value={rate}
+                  onChange={(e) => {
+                    setRate(e.target.value);
+                  }}
+                />
+              </ul>
+              <ul>
+                <label htmlFor="pitch">
+                  <span>Pitch:</span> <span>{pitch}</span>
+                </label>
+
+                <input
+                  type="range"
+                  min="0"
+                  max="2"
+                  step="0.1"
+                  value={pitch}
+                  id="pitch"
+                  onChange={(event) => {
+                    setPitch(event.target.value);
+                  }}
+                />
+              </ul>
             </div>
           </div>
           <div className="product-main-inner">
             <div className="filter">
-              <ul className="list">
+              <ul className="list-wrap">
                 <p
                   className="list-item"
                   style={{
@@ -446,36 +454,38 @@ const Product = ({ texts }) => {
                     border: borderStyle,
                   }}
                 >
-                  필터 숨기기
-                  <FontAwesomeIcon className="faSliders" icon={faSliders} />
+                  <span className="list-item">
+                    필터 숨기기{" "}
+                    <FontAwesomeIcon className="faSliders" icon={faSliders} />
+                  </span>
                 </p>
 
-                <div className="list-item-choice">
-                  <span>정렬 기준 :</span>
-                  <p
-                    onClick={handleClick3}
-                    style={{
-                      backgroundColor: currentBgColor,
-                      border: borderStyle,
-                    }}
-                  >
+                <ul className="list-arrayBox">
+                  <p className="list-item">정렬 기준 :</p>
+                  <p className="list-item" onClick={handleClick3}>
                     {choice.find((c) => c.checked)?.choice || "추천순"}
                     {choiceDown ? (
-                      <FontAwesomeIcon icon={faChevronDown} />
+                      <FontAwesomeIcon
+                        className="faChevron"
+                        icon={faChevronDown}
+                      />
                     ) : (
-                      <FontAwesomeIcon icon={faChevronUp} />
+                      <FontAwesomeIcon
+                        className="faChevron"
+                        icon={faChevronUp}
+                      />
+                    )}
+                    {isChoice && (
+                      <>
+                        {choice.map((choice, index) => (
+                          <li key={index} onClick={() => choiceClick(index)}>
+                            <p>{choice.choice}</p>
+                          </li>
+                        ))}
+                      </>
                     )}
                   </p>
-                  {isChoice && (
-                    <>
-                      {choice.map((choice, index) => (
-                        <li key={index} onClick={() => choiceClick(index)}>
-                          <p>{choice.choice}</p>
-                        </li>
-                      ))}
-                    </>
-                  )}
-                </div>
+                </ul>
               </ul>
             </div>
             <div className="product-list">
