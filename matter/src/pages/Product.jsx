@@ -274,7 +274,7 @@ const Product = ({ texts }) => {
     <div>
       <div className="banner-wrapper">
         <Swiper
-          slidesPerView={3}
+          slidesPerView={1}
           spaceBetween={1}
           rewind={false}
           loop={true}
@@ -290,34 +290,28 @@ const Product = ({ texts }) => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img src="베너사진/MAIN-BANNER-01.png" alt="" />
+            <img
+              src="베너사진/MAIN-BANNER-01.png"
+              alt="2022년 satter의 신상 포스터 입니다. 세명의 모델이 ''의 제품을 입고 촬영을 했습니다. "
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="베너사진/MAIN-BANNER-02.png" alt="" />
+            <img
+              src="베너사진/MAIN-BANNER-02.png"
+              alt="이 브랜드가 선호하는 리조트 스타일의 잡지입니다. 빈티지 느낌이 어우러진 1990년대의 사진으로 보여집니다."
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="베너사진/MAIN-BANNER-03.png" alt="" />
+            <img
+              src="베너사진/MAIN-BANNER-03.png"
+              alt="2022년 satter의 신상제품들을 코디한 5명의 모델이미지 입니다."
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="베너사진/MAIN-BANNER-04.png" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="베너사진/MAIN-BANNER-01.png" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="베너사진/MAIN-BANNER-02.png" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="베너사진/MAIN-BANNER-03.png" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="베너사진/MAIN-BANNER-04.png" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="베너사진/MAIN-BANNER-01.png" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="베너사진/MAIN-BANNER-02.png" alt="" />
+            <img
+              src="베너사진/MAIN-BANNER-04.png"
+              alt="2022년 satter의 신상제품들을 코디한 6명의 모델이미지 입니다."
+            />
           </SwiperSlide>
         </Swiper>
       </div>
@@ -364,9 +358,17 @@ const Product = ({ texts }) => {
               <p className="list-item" onClick={handleClick}>
                 가격대
                 {showDown ? (
-                  <FontAwesomeIcon className="faChevron" icon={faChevronDown} />
+                  <FontAwesomeIcon
+                    className="faChevron"
+                    icon={faChevronDown}
+                    alt="클릭하면 가격대의 상세내용이 펼쳐집니다."
+                  />
                 ) : (
-                  <FontAwesomeIcon className="faChevron" icon={faChevronUp} />
+                  <FontAwesomeIcon
+                    className="faChevron"
+                    icon={faChevronUp}
+                    alt="클릭하면 가격대의 상세내용이 접어집니다."
+                  />
                 )}
               </p>
               {isShown && (
@@ -393,7 +395,12 @@ const Product = ({ texts }) => {
                 <>
                   {size.map((size, index) => (
                     <li key={index} onClick={() => sizeClick(index)}>
-                      <input type="checkbox" checked={size.checked} readOnly />
+                      <input
+                        type="checkbox"
+                        checked={size.checked}
+                        readOnly
+                        alt="체크하면 해당 제품의 사이즈가 나타납니다."
+                      />
                       <span className="list-detail">{size.size}</span>
                     </li>
                   ))}
@@ -403,9 +410,15 @@ const Product = ({ texts }) => {
 
             <div className="voice">
               <ul>
-                <button onClick={() => speak({ text: text, rate, pitch })}>
+                <button
+                  onClick={() => speak({ text: text, rate, pitch })}
+                  alt="음성인식을 조절할 수 있습니다."
+                >
                   <span>음성 인식</span>
-                  <FontAwesomeIcon icon={faMicrophone} />
+                  <FontAwesomeIcon
+                    icon={faMicrophone}
+                    alt="클릭하면 음성이 출력됩니다."
+                  />
                 </button>
                 <p className="voice-guide">클릭하시면 음성이 출력됩니다</p>
               </ul>
@@ -456,7 +469,11 @@ const Product = ({ texts }) => {
                   }}
                 >
                   필터 숨기기
-                  <FontAwesomeIcon className="faSliders" icon={faSliders} />
+                  <FontAwesomeIcon
+                    className="faSliders"
+                    icon={faSliders}
+                    alt="클릭하면 왼쪽에 비치된 필터들이 사라집니다."
+                  />
                 </p>
 
                 <div className="list-item-array">
@@ -507,7 +524,10 @@ const Product = ({ texts }) => {
               {texts.map((test, index) => (
                 <div className="product-preview" key={index}>
                   <div onClick={() => click(index)}>
-                    <img src={test.img} alt="" />
+                    <img
+                      src={test.img}
+                      alt="각 제품의 해당상품 이미지 입니다."
+                    />
                   </div>
                   <h2
                     className="best-text"
@@ -552,7 +572,7 @@ const Product = ({ texts }) => {
               <img
                 className="modalImg"
                 src="/메인사진/detailLogo.png"
-                alt="접근창 열기"
+                alt="사진을 클릭하면 시각적으로 불편하신 분에게 도움을 줄 수 있습니다."
                 onClick={openModal1}
               />
               <div
@@ -563,14 +583,24 @@ const Product = ({ texts }) => {
                   <div className="swich-wrap">
                     <div className="swich-item">
                       <span>
-                        <input type="checkbox" id="switch" className="hide" />
+                        <input
+                          type="checkbox"
+                          id="switch"
+                          className="hide"
+                          alt="클릭하시면 뇌전증 안전모드가 실행됩니다."
+                        />
                         <label for="switch" className="detail-input"></label>
                       </span>
                       <span>뇌전증 안전모드</span>
                     </div>
                     <div className="swich-item">
                       <span>
-                        <input type="checkbox" id="switch1" className="hide" />
+                        <input
+                          type="checkbox"
+                          id="switch1"
+                          className="hide"
+                          alt="클릭하시면 인지장애집중모드가 실행됩니다."
+                        />
                         <label
                           onClick={handleBorder}
                           for="switch1"
@@ -581,7 +611,12 @@ const Product = ({ texts }) => {
                     </div>
                     <div className="swich-item">
                       <span>
-                        <input type="checkbox" id="switch2" className="hide" />
+                        <input
+                          type="checkbox"
+                          id="switch2"
+                          className="hide"
+                          alt="클릭하시면 난독증 친화적 모드가 실행됩니다."
+                        />
                         <label
                           onClick={handleFontChange}
                           for="switch2"
@@ -598,12 +633,15 @@ const Product = ({ texts }) => {
                       <button>
                         <img
                           src="/메인사진/lightDark.png"
-                          alt="밝기 낮추기 버튼"
+                          alt="이 이미지는 밝기 낮추기 버튼입니다."
                         />
                       </button>
                       <span>0</span>
                       <button>
-                        <img src="/메인사진/light.png" alt="밝기 높이기 버튼" />
+                        <img
+                          src="/메인사진/light.png"
+                          alt="이 이미지는 밝기 높이기 버튼입니다."
+                        />
                       </button>
                     </p>
                   </div>
@@ -614,11 +652,16 @@ const Product = ({ texts }) => {
                       <button
                         className="min-button"
                         onClick={handlePreviousClick}
+                        alt="이 버튼을 클릭하시면 글자가 작아집니다"
                       >
                         <FontAwesomeIcon icon={faMinus} className="prev" />
                       </button>
                       <span>{sizeText[currentIndex].text}</span>
-                      <button className="plus-button" onClick={handleNextClick}>
+                      <button
+                        className="plus-button"
+                        onClick={handleNextClick}
+                        alt="이 버튼을 클릭하시면 글자가 커집니다"
+                      >
                         <FontAwesomeIcon icon={faPlus} />
                       </button>
                     </div>
