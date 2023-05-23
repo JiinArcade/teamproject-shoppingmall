@@ -315,7 +315,11 @@ const Product = ({ texts }) => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="product-wrapper">
+
+      <div
+        className="product-wrapper"
+        style={{ color: currentColor, fontFamily: fontStyle }}
+      >
         <h1 className="product-title">Product</h1>
         <div className="product-wrapper-inner">
           <div className="productName ">
