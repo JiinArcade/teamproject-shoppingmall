@@ -1,117 +1,249 @@
-li{
+li {
   list-style: none;
 }
-.detail-preview{
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;  
-}
-.main-img-wrapper{
-  width: 45%;
+
+ul {
+  padding-left: 0;
 }
 
-.size-info{
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  font-weight: 700;
-  font-size: 20px;
+.detail-list {
+  width: calc(100%);
 }
+
+.detail-preview {
+  padding: 3% 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-img-wrapper {
+  width: calc(100%);
+  margin-left: 50px;
+}
+
+.text-wrapper {
+  width: calc(100%);
+}
+
+.size-wrap {
+  width: calc(100% - 10%);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5fr;
+  margin-top: 50px;
+}
+
+.size-wrap h4 {
+  font-family: "Berliana Lovely Freebies";
+  text-align: center;
+}
+
+/* /////////사이즈표/////////// */
+.sizp-girdBox {
+  width: calc(100%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.sizp-girdBox {
+  width: calc(100% - 10%);
+  font-size: 15px;
+  font-family: "Pretendard-Medium";
+  margin-top: 20px;
+}
+
 .main-size-text {
-  /* display: flex; */
-  background-color: transparent;
   border: none;
-  padding: 0;
-  flex-direction: column;
-  display: block;
-  
+  background-color: transparent;
 }
 
-.main-size-text-list{
-  display: flex;
-  width: 90%;
-  
+.main-size-text-list li {
+  text-align: center;
+  margin-bottom: 15px;
 }
 
-.main-size-text-list li{
- width: calc(90%/5);
+.main-size-text-list {
+  width: calc(100%);
+  text-align: center;
 }
 
-.main-img{
-  width: 90%;
-  height: 400px;
-  margin-right: 10px;
+/* /////////좌측 이미지 보여주기/////////// */
+
+.change-Img img {
+  width: calc(100% - 20%);
+  height: 550px;
 }
 
-.change-Img img{
-  width: 90%;
-  height: 350px;
-  
-}
-
-.main-img-item{
-  width: 90%;
+.main-img-item {
+  width: calc(100% - 20%);
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-.main-img-item img{
-  width: calc(90%/5);
+.main-img-item img {
+  width: calc(95% / 5);
   cursor: pointer;
   object-fit: cover;
 }
 
-.text-wrapper{
-  width: 55%;
-  margin-top: -25px;
+/* /////////우측 텍스트////////// */
+
+.text-top-wrap {
+  width: calc(100%);
+  font-family: "Pretendard-Bold";
 }
 
-.size-text-wrapper{
+.text-top-wrap li:first-child {
+  font-size: 21px;
+}
+
+.text-top-wrap li:nth-child(2),
+.text-top-wrap li:last-child {
+  color: #5d5d5d;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.text-top-wrap li:last-child {
+  margin-top: 50px;
+}
+
+.price-text-wrap {
+  width: calc(100% - 65%);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.price-text-wrap li {
+  font-family: "Pretendard-Bold";
+  color: rgb(241, 107, 11);
+}
+
+.price-sub-text {
+  display: flex;
+}
+
+.price-sub-text li {
+  font-family: "Pretendard-Medium";
+  color: rgb(4, 111, 18);
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.price-sub-text li:last-child {
+  color: #aaaaaa;
+  text-decoration: line-through 1.5px;
+}
+
+/* /////////우측 사이즈///////// */
+.size-text-wrapper {
+  width: calc(100% - 25%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .size-text-wrapper button {
-  background-color: transparent;
-  border: 1px solid black;
+  width: calc(100% / 4 - 20px);
+  border: 2px solid #000;
+  background-color: #fff;
+  padding: 5px 15px;
   border-radius: 5px;
-  margin-right: 20px;
-  width: 80px;
-  height: 30px;
+  text-align: center;
+  font-family: "Pretendard-Medium";
+  font-size: 15px;
+  transition: all 300ms ease-in-out;
 }
 
-.design-text-wrapper{
-  width: 70%;
+.size-text-wrapper button:hover {
+  background-color: #dcdcdc;
 }
 
-.main-wrapper{
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  margin-top: 200px;
-}
-
-.main-img-wrapper{
+/* /////////우측 주문///////// */
+.order-wrapper {
+  width: calc(100% - 25%);
   display: flex;
-  flex-direction: column;
-  height: 800px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
 }
 
-.order-wrapper{
-  width: 200px;
-  display: flex;
-  margin-top: 20px;
-}
-.order{
-  width: 50%;
-}
-
-.heart-icon{
-  border: none;
+.order-wrapper button {
   background-color: #000;
   color: #fff;
-  padding: 5px;
-  font-size: 20px;
+  border: none;
+  font-family: "Pretendard-Bold";
+  border-radius: 5px;
+}
+
+.heart-icon {
+  width: calc(100% - 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: 15px;
+}
+
+.heart-icon:hover {
+  color: rgb(255, 94, 94);
+}
+
+.order-box {
+  width: calc(100%);
+  display: flex;
+}
+
+.order-box button {
+  width: calc(100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.order-box button:active {
+  background: #444444;
+}
+
+.order-box button:first-child {
+  margin-right: 20px;
+}
+
+/* /////////우측 하단 상세내용///////// */
+.aboutDesign-wrapper,
+.aboutWith-wrapper {
+  width: calc(100% - 20%);
+  margin-top: 50px;
+  font-family: "Pretendard-Medium";
+}
+
+.aboutDesign-wrapper li:first-child {
+  font-family: "Pretendard-ExtraBold";
+  margin-top: 0;
+}
+
+.aboutDesign-wrapper li:nth-child(2) {
+  margin-top: 5px;
+}
+
+.aboutDesign-wrapper li {
+  margin-top: 25px;
+}
+
+.aboutWith-wrapper li:first-child {
+  font-family: "Pretendard-ExtraBold";
+  margin-bottom: 5px;
+}
+
+.aboutWith-wrapper li:nth-child(3),
+.aboutWith-wrapper li:nth-child(5) {
+  font-family: "Pretendard-ExtraBold";
+  margin-top: 30px;
+  margin-bottom: 5px;
 }

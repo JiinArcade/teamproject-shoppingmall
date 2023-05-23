@@ -292,7 +292,7 @@ const Product = ({ texts }) => {
           <SwiperSlide>
             <img
               src="베너사진/MAIN-BANNER-01.png"
-              alt="2022년 satter의 신상 포스터 입니다. 세명의 모델이 ''의 제품을 입고 촬영을 했습니다. "
+              alt="2022년 matter의 신상 포스터 입니다. 세명의 모델이 ''의 제품을 입고 촬영을 했습니다. "
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -304,13 +304,13 @@ const Product = ({ texts }) => {
           <SwiperSlide>
             <img
               src="베너사진/MAIN-BANNER-03.png"
-              alt="2022년 satter의 신상제품들을 코디한 5명의 모델이미지 입니다."
+              alt="2022년 matter의 신상제품들을 코디한 5명의 모델이미지 입니다."
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="베너사진/MAIN-BANNER-04.png"
-              alt="2022년 satter의 신상제품들을 코디한 6명의 모델이미지 입니다."
+              alt="2022년 matter의 신상제품들을 코디한 6명의 모델이미지 입니다."
             />
           </SwiperSlide>
         </Swiper>
