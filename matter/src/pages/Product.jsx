@@ -214,6 +214,7 @@ const Product = ({ texts }) => {
       key={index}
       onClick={() => handleColorClick(color)}
       style={{ backgroundColor: color }}
+      title="글자색상 선택하기"
     ></button>
   ));
 
@@ -241,6 +242,7 @@ const Product = ({ texts }) => {
       key={i}
       onClick={() => bgHandleColorClick(color)}
       style={{ backgroundColor: color }}
+      title="배경색상 선택하기"
     ></button>
   ));
 
@@ -292,25 +294,25 @@ const Product = ({ texts }) => {
           <SwiperSlide>
             <img
               src="베너사진/MAIN-BANNER-01.png"
-              alt="2022년 matter의 신상 포스터 입니다. 세명의 모델이 ''의 제품을 입고 촬영을 했습니다. "
+              alt="남자 두명, 여자 한명 총 세명의 모델이 2022년 신상 제품을 입었다."
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="베너사진/MAIN-BANNER-02.png"
-              alt="이 브랜드가 선호하는 리조트 스타일의 잡지입니다. 빈티지 느낌이 어우러진 1990년대의 사진으로 보여집니다."
+              alt="빈티지 느낌이 어우러진 1990년대의 디카프리오 등 외국 배우들의 사진으로 보여집니다."
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="베너사진/MAIN-BANNER-03.png"
-              alt="2022년 matter의 신상제품들을 코디한 5명의 모델이미지 입니다."
+              alt="2022년 겨울 신상을 착용한 이미지입니다."
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="베너사진/MAIN-BANNER-04.png"
-              alt="2022년 matter의 신상제품들을 코디한 6명의 모델이미지 입니다."
+              alt="2022년 겨울 신상을 착용한 이미지입니다."
             />
           </SwiperSlide>
         </Swiper>
