@@ -1,7 +1,7 @@
 /* 공통적용 스타일 */
 .faChevron {
-  margin-left: 8px;
-  font-size: 13px;
+  margin-left: 0.5vw;
+  font-size: 0.8vw;
   cursor: pointer;
 }
 
@@ -11,14 +11,14 @@
 }
 
 .list-detail {
-  margin-left: 5px;
+  margin-left: 0.3vw;
 }
 
 .product-item-list li,
 .product-item-list p {
   font-size: 1.2vw;
   font-family: "Pretendard-Regular";
-  margin-bottom: 10px;
+  margin-bottom: 0.6vw;
 }
 
 .swiper .swiper-pagination {
@@ -146,7 +146,8 @@ input[type="range"] {
 /* ----우측 상단 필터 적용---- */
 
 .list {
-  width: calc(100% - 65%);
+  width: 28vw;
+  height: 2vw;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -155,7 +156,7 @@ input[type="range"] {
   right: 4vw;
   z-index: 2;
   font-family: "Pretendard-Light";
-  font-size: 1.1vw;
+  font-size: 1vw;
 }
 
 .faSliders {
@@ -164,17 +165,17 @@ input[type="range"] {
 }
 
 .list-item-array {
-  width: calc(100% - 8vw);
+  width: 17vw;
   display: flex;
   justify-content: space-between;
 }
 
 .list-item-choice {
-  width: calc(100% - 5vw);
+  width: 10vw;
 }
 
 .choice-array {
-  width: calc(100% - 25%);
+  width: 8vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -217,9 +218,15 @@ input[type="range"] {
   padding: 0.625vw;
 }
 
-.product-previewp-img {
+.product-preview img {
   width: 100vw;
   height: 23vw;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.product-preview img:hover {
+  transform: scale(1.03);
 }
 
 .product-preview img {
@@ -240,7 +247,6 @@ input[type="range"] {
   font-size: 0.85vw;
   font-weight: 700;
 }
-
 
 /* --------------접근성 버튼----------------- */
 .detail-wrapper {
