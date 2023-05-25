@@ -18,7 +18,7 @@ ul {
 
 .main-img-wrapper {
   width: calc(100%);
-  margin-left: 50px;
+  margin-left: 3vw;
 }
 
 .text-wrapper {
@@ -30,12 +30,13 @@ ul {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 5fr;
-  margin-top: 50px;
+  margin-top: 3vw;
 }
 
 .size-wrap h4 {
   font-family: "Berliana Lovely Freebies";
   text-align: center;
+  font-size: 1.5vw;
 }
 
 /* /////////사이즈표/////////// */
@@ -47,9 +48,9 @@ ul {
 
 .sizp-girdBox {
   width: calc(100% - 10%);
-  font-size: 15px;
+  font-size: 1vw;
   font-family: "Pretendard-Medium";
-  margin-top: 20px;
+  margin-top: 1.25vw;
 }
 
 .main-size-text {
@@ -70,15 +71,15 @@ ul {
 /* /////////좌측 이미지 보여주기/////////// */
 
 .change-Img img {
-  width: calc(100% - 20%);
-  height: 550px;
+  width: 30.5vw;
+  height: 34vw;
 }
 
 .main-img-item {
   width: calc(100% - 20%);
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 1.25vw;
 }
 
 .main-img-item img {
@@ -95,31 +96,32 @@ ul {
 }
 
 .text-top-wrap li:first-child {
-  font-size: 21px;
+  font-size: 1.4vw;
 }
 
 .text-top-wrap li:nth-child(2),
 .text-top-wrap li:last-child {
   color: #5d5d5d;
-  font-size: 15px;
-  margin-top: 10px;
+  font-size: 1vw;
+  margin-top: 0.6vw;
 }
 
 .text-top-wrap li:last-child {
-  margin-top: 50px;
+  margin-top: 3vw;
 }
 
 .price-text-wrap {
-  width: calc(100% - 65%);
+  width: 15vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 1.8vw;
 }
 
 .price-text-wrap li {
   font-family: "Pretendard-Bold";
   color: rgb(241, 107, 11);
+  font-size: 1vw;
 }
 
 .price-sub-text {
@@ -129,13 +131,13 @@ ul {
 .price-sub-text li {
   font-family: "Pretendard-Medium";
   color: rgb(4, 111, 18);
-  font-size: 15px;
-  margin-right: 5px;
+  font-size: 1vw;
+  margin-right: 0.3vw;
 }
 
 .price-sub-text li:last-child {
   color: #aaaaaa;
-  text-decoration: line-through 1.5px;
+  text-decoration: line-through 0.09vw;
 }
 
 /* /////////우측 사이즈///////// */
@@ -144,18 +146,18 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 3vw;
 }
 
 .size-text-wrapper button {
-  width: calc(100% / 4 - 20px);
-  border: 2px solid #000;
+  width: calc(100% / 4 - 1.25vw);
+  border: 0.12vw solid #000;
   background-color: #fff;
-  padding: 5px 15px;
-  border-radius: 5px;
+  padding: 0.3vw 0.9vw;
+  border-radius: 0.3vw;
   text-align: center;
   font-family: "Pretendard-Medium";
-  font-size: 15px;
+  font-size: 0.9vw;
   transition: all 300ms ease-in-out;
 }
 
@@ -169,7 +171,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 1.8vw;
 }
 
 .order-wrapper button {
@@ -177,7 +179,8 @@ ul {
   color: #fff;
   border: none;
   font-family: "Pretendard-Bold";
-  border-radius: 5px;
+  border-radius: 0.4vw;
+  font-size: 1vw;
 }
 
 .heart-icon {
@@ -185,8 +188,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  margin-left: 15px;
+  padding: 1.1vw;
+  margin-left: 0.9vw;
 }
 
 .heart-icon:hover {
@@ -199,12 +202,12 @@ ul {
 }
 
 .order-box button {
-  width: calc(100%);
+  width: 11vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 0.9vw 1.25vw;
 }
 
 .order-box button:active {
@@ -212,15 +215,16 @@ ul {
 }
 
 .order-box button:first-child {
-  margin-right: 20px;
+  margin-right: 1.25vw;
 }
 
 /* /////////우측 하단 상세내용///////// */
 .aboutDesign-wrapper,
 .aboutWith-wrapper {
   width: calc(100% - 20%);
-  margin-top: 50px;
+  margin-top: 3vw;
   font-family: "Pretendard-Medium";
+  font-size: 1vw;
 }
 
 .aboutDesign-wrapper li:first-child {
@@ -229,21 +233,21 @@ ul {
 }
 
 .aboutDesign-wrapper li:nth-child(2) {
-  margin-top: 5px;
+  margin-top: 0.3vw;
 }
 
 .aboutDesign-wrapper li {
-  margin-top: 25px;
+  margin-top: 1.5vw;
 }
 
 .aboutWith-wrapper li:first-child {
   font-family: "Pretendard-ExtraBold";
-  margin-bottom: 5px;
+  margin-bottom: 0.3vw;
 }
 
 .aboutWith-wrapper li:nth-child(3),
 .aboutWith-wrapper li:nth-child(5) {
   font-family: "Pretendard-ExtraBold";
-  margin-top: 30px;
-  margin-bottom: 5px;
+  margin-top: 1.8vw;
+  margin-bottom: 0.3vw;
 }

@@ -16,7 +16,7 @@
 
 .product-item-list li,
 .product-item-list p {
-  font-size: 18px;
+  font-size: 1.2vw;
   font-family: "Pretendard-Regular";
   margin-bottom: 10px;
 }
@@ -25,23 +25,28 @@
   display: none;
 }
 
+.banner-wrapper {
+  width: calc(100%);
+}
+
 /* ///////////////////// */
 
 .product-wrapper {
   width: calc(100%);
-  margin-top: 150px;
+  margin-top: 9vw;
 }
 
 .product-wrapper-inner {
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 10px 30px;
-  margin-top: 50px;
+  padding: 0.6vw 1.8vw;
+  margin-top: 3vw;
 }
 
 .product-title {
   width: calc(100%);
+  font-size: 2.5vw;
   text-align: center;
   font-family: "Berliana Lovely Freebies";
 }
@@ -49,21 +54,21 @@
 /* ----좌측 필터 적용---- */
 .productName {
   position: sticky;
-  top: 40px;
+  top: 2.5vw;
   width: calc(100% - 75%);
-  height: 300px;
+  height: 19vw;
   text-align: left;
   overflow-y: scroll;
   cursor: pointer;
 }
 
 .productName::-webkit-scrollbar {
-  width: 8px;
+  width: 0.6vw;
 }
 
 .productName::-webkit-scrollbar-thumb {
   background: #2f2f2f;
-  border-radius: 10px;
+  border-radius: 0.6vw;
 }
 
 .productName::-webkit-scrollbar-track {
@@ -71,7 +76,7 @@
 }
 
 .voice {
-  padding: 30px 0;
+  padding: 1.8vw 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,14 +96,14 @@
   display: flex;
   align-items: center;
   font-family: "Pretendard-ExtraBold";
-  font-size: 18px;
+  font-size: 1.2vw;
   border: none;
   background-color: transparent;
   transition: all 300ms ease-in-out;
 }
 
 .voice ul:first-child button span {
-  margin-right: 10px;
+  margin-right: 0.6vw;
 }
 
 .voice ul:first-child button:hover {
@@ -110,11 +115,11 @@
 }
 
 .voice-guide {
-  font-size: 15px;
+  font-size: 0.9vw;
   font-family: "Pretendard-Bold";
   position: absolute;
-  top: -35px;
-  left: 20px;
+  top: -2.2vw;
+  left: 0;
   background-color: #ffff03;
   padding: 5px 13px;
   border-radius: 20px;
@@ -122,11 +127,11 @@
 }
 
 .voice label {
-  width: 80px;
+  width: 5vw;
   display: flex;
   justify-content: space-between;
   font-family: "Pretendard-ExtraBold";
-  font-size: 17px;
+  font-size: 1vw;
 }
 
 .voice ul input {
@@ -134,7 +139,7 @@
 }
 
 input[type="range"] {
-  width: 100px;
+  width: 6.25vw;
   accent-color: #5a5a5a;
 }
 
@@ -147,24 +152,25 @@ input[type="range"] {
   align-items: flex-start;
   position: absolute;
   top: 0;
-  right: 65px;
+  right: 4vw;
   z-index: 2;
   font-family: "Pretendard-Light";
+  font-size: 1.1vw;
 }
 
 .faSliders {
   cursor: pointer;
-  margin-left: 8px;
+  margin-left: 0.5vw;
 }
 
 .list-item-array {
-  width: calc(100% - 130px);
+  width: calc(100% - 8vw);
   display: flex;
   justify-content: space-between;
 }
 
 .list-item-choice {
-  width: calc(100% - 80px);
+  width: calc(100% - 5vw);
 }
 
 .choice-array {
@@ -176,9 +182,9 @@ input[type="range"] {
 
 .list-item-choice div {
   background: #ffffff;
-  padding: 20px 20px 5px 20px;
-  box-shadow: 2px 2px 5px #a3a3a3;
-  border-radius: 5px;
+  padding: 1.25vw 1.25vw 0.3vw 1.25vw;
+  box-shadow: 0.125vw 0.125vw 0.3vw #a3a3a3;
+  border-radius: 0.3vw;
 }
 
 .list-item-choice div li {
@@ -201,44 +207,40 @@ input[type="range"] {
   flex-wrap: wrap;
   margin: 0 auto;
   font-family: "Pretendard-Medium";
-  margin-top: 40px;
+  margin-top: 2.5vw;
 }
 
 .product-preview {
   width: calc(100% / 3);
-  height: 600px;
+  height: 37vw;
   margin: 0 auto;
-  padding: 10px;
+  padding: 0.625vw;
 }
 
 .product-previewp-img {
-  width: 100%;
-  height: 380px;
+  width: 100vw;
+  height: 23vw;
 }
 
 .product-preview img {
-  width: 100%;
-  height: 380px;
+  width: 20vw;
+  height: 23vw;
+  margin-top: 2vw;
 }
 
 .best-text {
-  margin-top: 20px;
-  font-size: 13px;
+  margin-top: 1.25vw;
+  font-size: 0.9vw;
   color: rgb(230, 85, 19);
 }
 
-.title-text {
-  font-size: 13px;
+.title-text,
+.length-text,
+.price-text {
+  font-size: 0.85vw;
   font-weight: 700;
 }
 
-.length-text {
-  font-size: 14px;
-}
-
-.price-text {
-  font-size: 14px;
-}
 
 /* --------------접근성 버튼----------------- */
 .detail-wrapper {
@@ -256,12 +258,12 @@ input[type="range"] {
 }
 
 .detail-box::-webkit-scrollbar {
-  width: 10px;
+  width: 0.6vw;
 }
 
 .detail-box::-webkit-scrollbar-thumb {
   background: rgb(58, 58, 58);
-  border-radius: 10px;
+  border-radius: 0.6vw;
 }
 
 .detail-box::-webkit-scrollbar-track {
@@ -270,36 +272,37 @@ input[type="range"] {
 
 .detail-box {
   width: calc(100% - 70%);
-  height: 350px;
+  height: 22vw;
   position: absolute;
   bottom: 100%;
   right: 1%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25vw;
   background-color: #fff;
   overflow-y: scroll;
-  padding: 30px;
+  padding: 1.9vw;
 }
 
 .detail-innerBox {
   width: calc(100% - 10%);
   font-family: "Pretendard-ExtraBold";
-  font-size: 18px;
+  font-size: 1.1vw;
   margin: 0 auto;
 }
 
 /* ------스위치 버튼 --------*/
 .swich-wrap {
   width: calc(100%);
-  margin-bottom: 20px;
+  margin-bottom: 1.25vw;
+  font-size: 1.2vw;
 }
 
 .swich-item {
   width: calc(100%);
-  height: 40px;
+  height: 2.5vw;
   display: flex;
   justify-content: left;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.8vw;
 }
 
 .swich-item span {
@@ -308,7 +311,7 @@ input[type="range"] {
 }
 
 .swich-item span:last-child {
-  margin-left: 20px;
+  margin-left: 1.25vw;
 }
 
 .hide {
@@ -320,21 +323,21 @@ input[type="range"] {
 .detail-input {
   display: block;
   position: relative;
-  width: 60px;
-  height: 30px;
-  text-indent: -9999px;
+  width: 3.75vw;
+  height: 1.89vw;
+  text-indent: -624vw;
   background: #adadad;
-  border-radius: 20px;
+  border-radius: 1.25vw;
   cursor: pointer;
 }
 
 .detail-input:after {
   position: absolute;
-  top: 2px;
-  left: 5px;
+  top: 0.12vw;
+  left: 0.31vw;
   content: "";
-  width: 25px;
-  height: 25px;
+  width: 1.5vw;
+  height: 1.5vw;
   background: #fff;
   box-shadow: 1px 1px 3px 2px #8e8e8e;
   border-radius: 50%;
@@ -346,14 +349,14 @@ input:checked + .detail-input {
 }
 
 input:checked + .detail-input:after {
-  left: calc(100% - 5px);
+  left: calc(100% - 0.3vw);
   transform: translateX(-100%);
 }
 
 /* ----밝기----- */
 .light-wrap {
   width: calc(100%);
-  padding: 30px 0;
+  padding: 1.8vw 0;
 }
 
 .light-wrap p {
@@ -378,12 +381,12 @@ input:checked + .detail-input:after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 1.8vw;
 }
 
 .text-size button {
-  width: 30px;
-  height: 30px;
+  width: 1.8vw;
+  height: 1.8vw;
   border-radius: 50%;
 }
 
@@ -401,16 +404,16 @@ input:checked + .detail-input:after {
 }
 
 .bgcolor {
-  width: 30px;
-  height: 30px;
-  margin-top: 5px;
+  width: 1.9vw;
+  height: 1.9vw;
+  margin-top: 0.3vw;
   border-radius: 50%;
 }
 
 .textColor-changeWrap {
-  margin-top: 10px;
+  margin-top: 0.6vw;
 }
 
 .bgcColor-changeWrap {
-  margin-top: 40px;
+  margin-top: 2.5vw;
 }

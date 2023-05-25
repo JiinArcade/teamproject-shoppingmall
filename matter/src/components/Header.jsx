@@ -16,13 +16,15 @@ const Header = () => {
         </div>
 
         <div className="userList">
-          <li title="로그인 및 회원가입">로그인 / 회원가입</li>
-          <li title="찜 목록보기" className="icon icon-heart">
-            <FontAwesomeIcon icon={faHeart} />
-          </li>
-          <li title="장바구니 보기" className="icon icon-cart">
-            <FontAwesomeIcon icon={faCartShopping} />
-          </li>
+          <ul className="userItemBox">
+            <li title="로그인 및 회원가입">로그인 / 회원가입</li>
+            <li title="찜 목록보기" className="icon icon-heart">
+              <FontAwesomeIcon icon={faHeart} />
+            </li>
+            <li title="장바구니 보기" className="icon icon-cart">
+              <FontAwesomeIcon icon={faCartShopping} />
+            </li>
+          </ul>
         </div>
       </div>
     </div>

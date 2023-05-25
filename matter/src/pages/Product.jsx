@@ -291,7 +291,7 @@ const Product = ({ texts }) => {
           modules={[Pagination, Navigation, Autoplay]}
           className="mySwiper"
         >
-          <SwiperSlide>
+          <SwiperSlide className="swiperSlide">
             <img
               src="베너사진/MAIN-BANNER-01.png"
               alt="남자 두명, 여자 한명 총 세명의 모델이 2022년 신상 제품을 입었다."

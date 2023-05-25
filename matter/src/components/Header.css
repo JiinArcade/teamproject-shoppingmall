@@ -1,40 +1,39 @@
 .Header-Container {
-    width: 100%;
-    height: 100px;
-    line-height: 100px;
-    font-family: 'Pretendard-Medium';
+  width: calc(100%);
+  height: 100px;
+  line-height: 100px;
+  font-family: "Pretendard-Medium";
 }
 
 .Header-Box {
-    display: grid;
-    grid-template-columns: 1fr auto;
-}
-
-.logo {
-    padding: 0 100px;
+  width: calc(100% - 10%);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .logo img {
-    width: 120px;
+  width: calc(100% - 87%);
 }
 
-.userList {
-    width: 220px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 100px;
-    cursor: pointer;
+.userItemBox {
+  width: 15vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userList li {
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  font-size: 1.2vw;
 }
 
 .userList li:first-child:hover {
-    font-weight: 700;
+  font-weight: 700;
 }
 
-.icon {
-    font-size: 20px;
-}
-
-.userList li:hover:nth-child(2) {
-    color: #fac107;
+.userList li:hover:nth-child(2),
+.userList li:hover:nth-child(3) {
+  color: #fac107;
 }
