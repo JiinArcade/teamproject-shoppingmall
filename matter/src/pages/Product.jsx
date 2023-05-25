@@ -291,29 +291,29 @@ const Product = ({ texts }) => {
           modules={[Pagination, Navigation, Autoplay]}
           className="mySwiper"
         >
-          <SwiperSlide className="swiperSlide">
-            <img
-              src="베너사진/MAIN-BANNER-01.png"
-              alt="남자 두명, 여자 한명 총 세명의 모델이 2022년 신상 제품을 입었다."
-            />
+          <SwiperSlide>
+            <div
+              className="swiperSlideBox swiperSlide1"
+              title="남자 두명, 여자 한명 총 세명의 모델이 2022년 신상 제품을 입었다."
+            ></div>
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src="베너사진/MAIN-BANNER-02.png"
-              alt="빈티지 느낌이 어우러진 1990년대의 디카프리오 등 외국 배우들의 사진으로 보여집니다."
-            />
+            <div
+              className="swiperSlideBox swiperSlide2"
+              title="빈티지 느낌이 어우러진 1990년대의 디카프리오 등 외국 배우들의 사진으로 보여집니다."
+            ></div>
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src="베너사진/MAIN-BANNER-03.png"
-              alt="2022년 겨울 신상을 착용한 이미지입니다."
-            />
+            <div
+              className="swiperSlideBox swiperSlide3"
+              title="2022년 겨울 신상을 착용한 이미지입니다."
+            ></div>
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src="베너사진/MAIN-BANNER-04.png"
-              alt="2022년 겨울 신상을 착용한 이미지입니다."
-            />
+            <div
+              className="swiperSlideBox swiperSlide4"
+              title="2022년 겨울 신상을 착용한 이미지입니다."
+            ></div>
           </SwiperSlide>
         </Swiper>
       </div>
