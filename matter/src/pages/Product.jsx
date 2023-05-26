@@ -257,7 +257,7 @@ const Product = ({ texts }) => {
   const borderStyle = borderVisible ? "1px solid blue" : "none";
 
   ////// 클릭했을 때 font-family 바뀌게 /////////
-  const [fontFamily, setFontFamily] = useState("Pretendard-Thin");
+  const [fontFamily, setFontFamily] = useState("BareunBatang");
 
   const handleFontChange = () => {
     setFontFamily(!fontFamily);

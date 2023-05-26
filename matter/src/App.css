@@ -60,5 +60,5 @@ li {
 
 @font-face {
     font-family: 'BareunBatang';
-    src: url('../public/assets/Font/AnyConv.com__BareunBatangOTFPro-1.woff');
+    src: url('//public/assets/Font/AnyConv.com__BareunBatangOTFPro-1.woff');
 }
