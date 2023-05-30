@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+🎀쇼핑몰 웹 페이지 반응형 이미지입니다!
+![프로젝트 쇼핑몰_대지 1](https://github.com/JiinArcade/Portfolio/assets/121204954/1450e0a2-f925-43ff-a3a1-b0eb9629b012)
+![프로젝트 쇼핑몰_대지 1 사본](https://github.com/JiinArcade/Portfolio/assets/121204954/583954e2-61fe-40f1-9705-444d1247b9fc)
+![프로젝트 쇼핑몰_대지 1 사본 3](https://github.com/JiinArcade/Portfolio/assets/121204954/58a9f75b-798d-43f0-8a5b-ae67388ec4c8)
+![프로젝트 쇼핑몰_대지 1 사본 2](https://github.com/JiinArcade/Portfolio/assets/121204954/a1e5715d-3ade-4b10-a5c7-10da4becfe57)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+😍프로젝트 소개!
+평소에 시각장애인들도 불편함 없이 웹포털 사이트를 이용했으면 좋겠다라는 생각을 했었어요!
+마침 뉴스에도 시각장애인들이 웹쇼핑에 불편함을 느낀다는 것을 우연히 볼 수 있었어요! 
+그래서 바로 팀원들을 꾸리고 프로젝트를 실행하게 되었습니다!
+중간점검때 마다 느낀것은 어떤 태그를 써야 접근하기 쉬울지 공부도 계속 해야했고
+시각장애인들도 사용할 수 있도록 개발하는것이 어렵기도 하더라구요! 기획을 탄탄히 잡아야만 함을 느꼈어요!
 
-## Available Scripts
 
-In the project directory, you can run:
+😁작업 기간!
+작업 기간은 23년 5월 초부터 5월 말까지 총 3주가 소요되었습니다.
+기획 및 디자인 1주일, 나머지 시간은 개발하는 시간이었습니다.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+😚사용된 기술!
+디자인을 좋아하는 터라 어도비 일러스트 툴로 디자인을 빠릇빠릇 하게 하였고 react를 사용하여 웹포털 사이트를 만들었습니다!
