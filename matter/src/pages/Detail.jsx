@@ -31,39 +31,52 @@ const Detail = ({ tests, id }) => {
           <div className="main-img-wrapper">
             {selectImg ? (
               <div className="change-Img">
-                <img src={selectImg} alt="해당 상품의 이미지입니다" />
+                <img
+                  tabindex="0"
+                  src={selectImg}
+                  alt="해당 상품의 이미지입니다"
+                />
               </div>
             ) : (
               <div className="change-Img">
-                <img src={test.mainimg} alt="해당 상품의 이미지입니다" />
+                <img
+                  tabindex="0"
+                  src={test.mainimg}
+                  alt="해당 상품의 이미지입니다"
+                />
               </div>
             )}
             <div className="main-img-item">
               <img
+                tabindex="0"
                 src={test.mainimg}
                 alt={test.alt}
                 className={selectImg === test.mainimg ? "" : ""}
                 onMouseOver={() => handleImageClick(test.mainimg)}
               />
               <img
+                tabindex="0"
                 src={test.mainimg2}
                 alt={test.alt1}
                 className={selectImg === test.mainimg2 ? "" : ""}
                 onMouseOver={() => handleImageClick(test.mainimg2)}
               />
               <img
+                tabindex="0"
                 src={test.mainimg3}
                 alt={test.alt1}
                 className={selectImg === test.mainimg3 ? "" : ""}
                 onMouseOver={() => handleImageClick(test.mainimg3)}
               />
               <img
+                tabindex="0"
                 src={test.mainimg4}
                 alt={test.alt1}
                 className={selectImg === test.mainimg4 ? "" : ""}
                 onMouseOver={() => handleImageClick(test.mainimg4)}
               />
               <img
+                tabindex="0"
                 src={test.mainimg5}
                 alt={test.alt1}
                 className={selectImg === test.mainimg5 ? "" : ""}
@@ -72,52 +85,54 @@ const Detail = ({ tests, id }) => {
             </div>
 
             <div className="size-wrap">
-              <h4 className="size-info">{test.size}</h4>
+              <h4 tabindex="0" className="size-info">
+                {test.size}
+              </h4>
               <div className="sizp-girdBox">
-                <button className="main-size-text">
+                <button tabindex="0" className="main-size-text">
                   <ul className="main-size-text-list">
-                    <li>{test.size1}</li>
-                    <li>{test.size2}</li>
-                    <li>{test.size3}</li>
-                    <li>{test.size4}</li>
-                    <li>{test.size5}</li>
+                    <li tabindex="0">{test.size1}</li>
+                    <li tabindex="0">{test.size2}</li>
+                    <li tabindex="0">{test.size3}</li>
+                    <li tabindex="0">{test.size4}</li>
+                    <li tabindex="0">{test.size5}</li>
                   </ul>
                 </button>
                 <button className="main-size-text">
                   <ul className="main-size-text-list">
-                    <li>{test.size6}</li>
-                    <li>{test.size7}</li>
-                    <li>{test.size8}</li>
-                    <li>{test.size9}</li>
-                    <li>{test.size10}</li>
+                    <li tabindex="0">{test.size6}</li>
+                    <li tabindex="0">{test.size7}</li>
+                    <li tabindex="0">{test.size8}</li>
+                    <li tabindex="0">{test.size9}</li>
+                    <li tabindex="0">{test.size10}</li>
                   </ul>
                 </button>
                 <button className="main-size-text">
                   <ul className="main-size-text-list">
-                    <li>{test.size11}</li>
-                    <li>{test.size12}</li>
-                    <li>{test.size13}</li>
-                    <li>{test.size14}</li>
-                    <li>{test.size15}</li>
+                    <li tabindex="0">{test.size11}</li>
+                    <li tabindex="0">{test.size12}</li>
+                    <li tabindex="0">{test.size13}</li>
+                    <li tabindex="0">{test.size14}</li>
+                    <li tabindex="0">{test.size15}</li>
                   </ul>
                 </button>
                 <button className="main-size-text">
                   <ul className="main-size-text-list">
-                    <li>{test.size16}</li>
-                    <li>{test.size17}</li>
-                    <li>{test.size18}</li>
-                    <li>{test.size19}</li>
-                    <li>{test.size20}</li>
+                    <li tabindex="0">{test.size16}</li>
+                    <li tabindex="0">{test.size17}</li>
+                    <li tabindex="0">{test.size18}</li>
+                    <li tabindex="0">{test.size19}</li>
+                    <li tabindex="0">{test.size20}</li>
                   </ul>
                 </button>
 
                 <button className="main-size-text">
                   <ul className="main-size-text-list">
-                    <li>{test.size21}</li>
-                    <li>{test.size22}</li>
-                    <li>{test.size18}</li>
-                    <li>{test.size23}</li>
-                    <li>{test.size25}</li>
+                    <li tabindex="0">{test.size21}</li>
+                    <li tabindex="0">{test.size22}</li>
+                    <li tabindex="0">{test.size18}</li>
+                    <li tabindex="0">{test.size23}</li>
+                    <li tabindex="0">{test.size25}</li>
                   </ul>
                 </button>
               </div>
@@ -127,15 +142,15 @@ const Detail = ({ tests, id }) => {
           <div className="text-wrapper">
             <div className="text-inner-wrap">
               <ul className="text-top-wrap">
-                <li>{test.subtext}</li>
-                <li>{test.deatiltitle}</li>
-                <li>{test.deatillegth}</li>
+                <li tabindex="0">{test.subtext}</li>
+                <li tabindex="0">{test.deatiltitle}</li>
+                <li tabindex="0">{test.deatillegth}</li>
               </ul>
               <ul className="price-text-wrap">
-                <li>{test.deatilprice}</li>
+                <li tabindex="0"> {test.deatilprice}</li>
                 <ul className="price-sub-text">
-                  <li>{test.salepercent}</li>
-                  <li>{test.saleprice}</li>
+                  <li tabindex="0">{test.salepercent}</li>
+                  <li tabindex="0">{test.saleprice}</li>
                 </ul>
               </ul>
               {/* <img src={test.colorimg} alt="" />
@@ -177,15 +192,17 @@ const Detail = ({ tests, id }) => {
                 </button>
               </div>
               <ul
+                tabindex="0"
                 className="aboutDesign-wrapper"
                 alt="상품의 디자인 설명입니다"
               >
-                <li>{test.deatildesign}</li>
-                <li>{test.deatildesign1}</li>
-                <li>{test.deatildesign2}</li>
-                <li>{test.deatildesign3}</li>
+                <li >{test.deatildesign}</li>
+                <li >{test.deatildesign1}</li>
+                <li >{test.deatildesign2}</li>
+                <li >{test.deatildesign3}</li>
               </ul>
               <ul
+                tabindex="0"
                 className="aboutWith-wrapper"
                 alt="상품의 디자인 외 설명입니다"
               >

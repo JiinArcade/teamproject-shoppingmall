@@ -10,6 +10,7 @@ const Header = () => {
       <div className="Header-Box">
         <div className="logo">
           <img
+            tabindex="0"
             src="assets/Img/matter.logo.png"
             alt="브랜드 matter의 글자로고"
           />
@@ -17,11 +18,13 @@ const Header = () => {
 
         <div className="userList">
           <ul className="userItemBox">
-            <li title="로그인 및 회원가입">로그인 / 회원가입</li>
-            <li title="찜 목록보기" className="icon icon-heart">
+            <li tabindex="0" title="로그인 및 회원가입">
+              로그인 / 회원가입
+            </li>
+            <li tabindex="0" title="찜 목록보기" className="icon icon-heart">
               <FontAwesomeIcon icon={faHeart} />
             </li>
-            <li title="장바구니 보기" className="icon icon-cart">
+            <li tabindex="0" title="장바구니 보기" className="icon icon-cart">
               <FontAwesomeIcon icon={faCartShopping} />
             </li>
           </ul>

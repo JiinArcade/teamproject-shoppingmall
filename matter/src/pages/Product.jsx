@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
-import { useNavigate, Await } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,7 +15,7 @@ import "./slider.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { useSpeechRecognition, useSpeechSynthesis } from "react-speech-kit";
+import { useSpeechSynthesis } from "react-speech-kit";
 
 const Product = ({ texts }) => {
   const navigate = useNavigate();
@@ -238,6 +238,7 @@ const Product = ({ texts }) => {
 
   const bgColorButton = bgColors.map((color, i) => (
     <button
+      tabindex="0"
       className="bgcolor"
       key={i}
       onClick={() => bgHandleColorClick(color)}
@@ -326,45 +327,64 @@ const Product = ({ texts }) => {
         <div className="product-wrapper-inner">
           <div className="productName ">
             <ul className="product-item-list">
-              <li>탑&티셔츠</li>
-              <li>후디</li>
-              <li>니트</li>
-              <li>재킷 & 베스트</li>
-              <li>팬츠</li>
-              <li>쇼츠</li>
-              <li>스커트 & 드레스</li>
-              <li>악세사리</li>
-              <li>신발</li>
+              <li tabindex="0">탑&티셔츠</li>
+              <li tabindex="0">후디</li>
+              <li tabindex="0">니트</li>
+              <li tabindex="0">재킷 & 베스트</li>
+              <li tabindex="0">팬츠</li>
+              <li tabindex="0">쇼츠</li>
+              <li tabindex="0">스커트 & 드레스</li>
+              <li tabindex="0">악세사리</li>
+              <li tabindex="0">신발</li>
             </ul>
             <ul className="product-item-list">
-              <p className="list-item" onClick={handleClick1}>
+              <p tabindex="0" className="list-item" onClick={handleClick1}>
                 성별
                 {isDown ? (
-                  <FontAwesomeIcon className="faChevron" icon={faChevronDown} />
+                  <FontAwesomeIcon
+                    tabindex="0"
+                    className="faChevron"
+                    icon={faChevronDown}
+                    title="성별 카테고리가 열려집니다."
+                  />
                 ) : (
-                  <FontAwesomeIcon className="faChevron" icon={faChevronUp} />
+                  <FontAwesomeIcon
+                    tabindex="0"
+                    className="faChevron"
+                    icon={faChevronUp}
+                    title="성별 카테고리가 닫혀집니다."
+                  />
                 )}
               </p>
               {isPeople && (
                 <>
                   {people.map((people, index) => (
-                    <li key={index} onClick={() => peopleClick(index)}>
+                    <li
+                      tabindex="0"
+                      key={index}
+                      onClick={() => peopleClick(index)}
+                    >
                       <input
+                        alt="체크버튼입니다."
+                        tabindex="0"
                         type="checkbox"
                         checked={people.checked}
                         readOnly
                       />
-                      <span className="list-detail">{people.name}</span>
+                      <span tabindex="0" className="list-detail">
+                        {people.name}
+                      </span>
                     </li>
                   ))}
                 </>
               )}
             </ul>
-            <ul className="product-item-list">
-              <p className="list-item" onClick={handleClick}>
+            <ul tabindex="0" className="product-item-list">
+              <p tabindex="0" className="list-item" onClick={handleClick}>
                 가격대
                 {showDown ? (
                   <FontAwesomeIcon
+                    tabindex="0"
                     className="faChevron"
                     icon={faChevronDown}
                     alt="클릭하면 가격대의 상세내용이 펼쳐집니다."
@@ -389,25 +409,40 @@ const Product = ({ texts }) => {
               )}
             </ul>
             <ul className="product-item-list">
-              <p className="list-item" onClick={handleClick2}>
+              <p tabindex="0" className="list-item" onClick={handleClick2}>
                 사이즈
                 {sizeDown ? (
-                  <FontAwesomeIcon className="faChevron" icon={faChevronDown} />
+                  <FontAwesomeIcon
+                    tabindex="0"
+                    className="faChevron"
+                    icon={faChevronDown}
+                  />
                 ) : (
-                  <FontAwesomeIcon className="faChevron" icon={faChevronUp} />
+                  <FontAwesomeIcon
+                    tabindex="0"
+                    className="faChevron"
+                    icon={faChevronUp}
+                  />
                 )}
               </p>
               {isSize && (
                 <>
                   {size.map((size, index) => (
-                    <li key={index} onClick={() => sizeClick(index)}>
+                    <li
+                      tabindex="0"
+                      key={index}
+                      onClick={() => sizeClick(index)}
+                    >
                       <input
+                        tabindex="0"
                         type="checkbox"
                         checked={size.checked}
                         readOnly
                         alt="체크하면 해당 제품의 사이즈가 나타납니다."
                       />
-                      <span className="list-detail">{size.size}</span>
+                      <span tabindex="0" className="list-detail">
+                        {size.size}
+                      </span>
                     </li>
                   ))}
                 </>
@@ -417,6 +452,7 @@ const Product = ({ texts }) => {
             <div className="voice">
               <ul>
                 <button
+                  tabindex="0"
                   onClick={() => speak({ text: text, rate, pitch })}
                   alt="음성인식을 조절할 수 있습니다."
                 >
@@ -426,14 +462,18 @@ const Product = ({ texts }) => {
                     alt="클릭하면 음성이 출력됩니다."
                   />
                 </button>
-                <p className="voice-guide">클릭하시면 음성이 출력됩니다</p>
+                <p tabindex="0" className="voice-guide">
+                  클릭하시면 음성이 출력됩니다
+                </p>
               </ul>
               <ul>
                 <label htmlFor="pitch">
-                  <span>Rate:</span> <span>{rate}</span>
+                  <span tabindex="0">Rate:</span>{" "}
+                  <span tabindex="0">{rate}</span>
                 </label>
 
                 <input
+                  alt="말하는 속도를 조절합니다."
                   type="range"
                   min="0.5"
                   max="2"
@@ -446,7 +486,8 @@ const Product = ({ texts }) => {
               </ul>
               <ul>
                 <label htmlFor="pitch">
-                  <span>Pitch:</span> <span>{pitch}</span>
+                  <span tabindex="0">Pitch:</span>{" "}
+                  <span tabindex="0">{pitch}</span>
                 </label>
 
                 <input
@@ -468,6 +509,7 @@ const Product = ({ texts }) => {
             <div className="filter">
               <ul className="list">
                 <p
+                  tabindex="0"
                   className="list-item"
                   style={{
                     backgroundColor: currentBgColor,
@@ -484,6 +526,7 @@ const Product = ({ texts }) => {
 
                 <div className="list-item-array">
                   <p
+                    tabindex="0"
                     style={{
                       backgroundColor: currentBgColor,
                       border: borderStyle,
@@ -493,6 +536,7 @@ const Product = ({ texts }) => {
                   </p>
                   <div className="list-item-choice">
                     <p
+                      tabindex="0"
                       className="choice-array"
                       onClick={handleClick3}
                       style={{
@@ -505,11 +549,15 @@ const Product = ({ texts }) => {
                         <FontAwesomeIcon
                           className="faChevron"
                           icon={faChevronDown}
+                          tabindex="0"
+                          title="선택하시면 카테고리가 열려집니다."
                         />
                       ) : (
                         <FontAwesomeIcon
                           className="faChevron"
                           icon={faChevronUp}
+                          tabindex="0"
+                          title="선택하시면 카테고리가 닫혀집니다."
                         />
                       )}
                     </p>
@@ -517,7 +565,7 @@ const Product = ({ texts }) => {
                       <div>
                         {choice.map((choice, index) => (
                           <li key={index} onClick={() => choiceClick(index)}>
-                            <p>{choice.choice}</p>
+                            <p tabindex="0">{choice.choice}</p>
                           </li>
                         ))}
                       </div>
@@ -529,13 +577,14 @@ const Product = ({ texts }) => {
             <div className="product-list">
               {texts.map((test, index) => (
                 <div className="product-preview" key={index}>
-                  <div onClick={() => click(index)}>
+                  <div tabindex="0" onClick={() => click(index)}>
                     <img
                       src={test.img}
                       alt="각 제품의 해당상품 이미지 입니다."
                     />
                   </div>
                   <h2
+                    tabindex="0"
                     className="best-text"
                     style={{
                       backgroundColor: currentBgColor,
@@ -545,6 +594,7 @@ const Product = ({ texts }) => {
                     {test.recommend}
                   </h2>
                   <h3
+                    tabindex="0"
                     className="title-text"
                     style={{
                       backgroundColor: currentBgColor,
@@ -554,6 +604,7 @@ const Product = ({ texts }) => {
                     {test.title}
                   </h3>
                   <p
+                    tabindex="0"
                     className="length-text"
                     style={{
                       backgroundColor: currentBgColor,
@@ -563,6 +614,7 @@ const Product = ({ texts }) => {
                     {test.length}
                   </p>
                   <p
+                    tabindex="0"
                     className="price-text"
                     style={{
                       backgroundColor: currentBgColor,
@@ -574,75 +626,86 @@ const Product = ({ texts }) => {
                 </div>
               ))}
             </div>
-            <div className="detail-wrapper">
+            <div tabindex="0" className="detail-wrapper">
               <img
+                tabindex="0"
                 className="modalImg"
                 src="/메인사진/detailLogo.png"
                 alt="사진을 클릭하면 시각적으로 불편하신 분에게 도움을 줄 수 있습니다."
                 onClick={openModal1}
               />
               <div
+                tabindex="0"
                 className="detail-box"
                 style={{ display: toggleModal ? "block" : "none" }}
               >
                 <div className="detail-innerBox">
                   <div className="swich-wrap">
                     <div className="swich-item">
-                      <span>
+                      <span tabindex="0">
                         <input
+                          tabindex="0"
                           type="checkbox"
                           id="switch"
                           className="hide"
                           alt="클릭하시면 뇌전증 안전모드가 실행됩니다."
                         />
-                        <label for="switch" className="detail-input"></label>
+                        <label
+                          tabindex="0"
+                          for="switch"
+                          className="detail-input"
+                        ></label>
                       </span>
-                      <span>뇌전증 안전모드</span>
+                      <span tabindex="0">뇌전증 안전모드</span>
                     </div>
                     <div className="swich-item">
-                      <span>
+                      <span tabindex="0">
                         <input
+                          tabindex="0"
                           type="checkbox"
                           id="switch1"
                           className="hide"
                           alt="클릭하시면 인지장애집중모드가 실행됩니다."
                         />
                         <label
+                          tabindex="0"
                           onClick={handleBorder}
                           for="switch1"
                           className="detail-input"
                         ></label>
                       </span>
-                      <span>인지 장애 집중모드</span>
+                      <span tabindex="0">인지 장애 집중모드</span>
                     </div>
                     <div className="swich-item">
-                      <span>
+                      <span tabindex="0">
                         <input
+                          tabindex="0"
                           type="checkbox"
                           id="switch2"
                           className="hide"
                           alt="클릭하시면 난독증 친화적 모드가 실행됩니다."
                         />
                         <label
+                          tabindex="0"
                           onClick={handleFontChange}
                           for="switch2"
                           className="detail-input"
                         ></label>
                       </span>
-                      <span>난독증 친화적 모드</span>
+                      <span tabindex="0">난독증 친화적 모드</span>
                     </div>
                   </div>
 
                   <div className="light-wrap">
-                    <span>밝기 조절</span>
+                    <span tabindex="0">밝기 조절</span>
                     <p>
-                      <button>
+                      <button tabindex="0">
                         <img
                           src="/메인사진/lightDark.png"
                           alt="이 이미지는 밝기 낮추기 버튼입니다."
                         />
                       </button>
-                      <span>0</span>
+                      <span tabindex="0">0</span>
                       <button>
                         <img
                           src="/메인사진/light.png"
@@ -653,7 +716,7 @@ const Product = ({ texts }) => {
                   </div>
 
                   <div className="text-wrap">
-                    <span>글자 크기조절</span>
+                    <span tabindex="0">글자 크기조절</span>
                     <div className="text-size">
                       <button
                         className="min-button"
@@ -662,7 +725,7 @@ const Product = ({ texts }) => {
                       >
                         <FontAwesomeIcon icon={faMinus} className="prev" />
                       </button>
-                      <span>{sizeText[currentIndex].text}</span>
+                      <span tabindex="0">{sizeText[currentIndex].text}</span>
                       <button
                         className="plus-button"
                         onClick={handleNextClick}
@@ -674,13 +737,21 @@ const Product = ({ texts }) => {
                   </div>
 
                   <div className="textColor-changeWrap">
-                    <span className="change-color-text">글자 색상 변경</span>
-                    <div className="change-color">{colorButtons}</div>
+                    <span className="change-color-text" tabindex="0">
+                      글자 색상 변경
+                    </span>
+                    <div tabindex="0" className="change-color">
+                      {colorButtons}
+                    </div>
                   </div>
 
                   <div className="bgcColor-changeWrap">
-                    <span className="change-color-text">배경 색상 변경</span>
-                    <div className="change-color">{bgColorButton}</div>
+                    <span tabindex="0" className="change-color-text">
+                      배경 색상 변경
+                    </span>
+                    <div tabindex="0" className="change-color">
+                      {bgColorButton}
+                    </div>
                   </div>
                 </div>
               </div>
